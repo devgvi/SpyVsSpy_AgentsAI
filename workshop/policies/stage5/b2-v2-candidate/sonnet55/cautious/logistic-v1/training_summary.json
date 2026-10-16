@@ -1,0 +1,38 @@
+{
+  "policy_key": "sonnet55:cautious",
+  "candidate": "C1",
+  "rows": 937,
+  "phase_a_rows": 670,
+  "hard_rows": 267,
+  "weights": {
+    "phase_a": 1.0,
+    "hard": 1.0
+  },
+  "actions": {
+    "interact": 354,
+    "move": 330,
+    "inspect": 176,
+    "avoid_opponent": 44,
+    "wait": 17,
+    "enter_safe_code": 8,
+    "approach_opponent": 7,
+    "place_trap": 1
+  },
+  "columns": 111,
+  "classes": [
+    "wait",
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 163,
+    "objective": 174.86082272072676,
+    "n_params": 896
+  },
+  "seconds": 2.75
+}

@@ -1,0 +1,862 @@
+{
+ "description": "FINAL-2 golden outputs of the call-free frozen policies (direct frozen loaders), per policy / key: masked action probabilities and the full decide_payload choice on 12 fixed decisions_clean rows",
+ "outputs": {
+  "b1|gpt61sol:saboteur": {
+   "decisions": [
+    {
+     "action": "move",
+     "probs": {
+      "move": 1.0,
+      "wait": 0.0
+     },
+     "target": "sofa_01"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.142858529232,
+      "interact": 0.761903595928,
+      "move": 0.09523787484,
+      "wait": 0.0
+     },
+     "target": "desk_01"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "approach_opponent": 0.006350192903,
+      "avoid_opponent": 0.0,
+      "inspect": 0.008355632536,
+      "interact": 0.815675294532,
+      "move": 0.169618880029,
+      "wait": 0.0
+     },
+     "target": "desk_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "interact": 0.222205079914,
+      "move": 0.777794920086,
+      "wait": 0.0
+     },
+     "target": "statue_01"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.142858529232,
+      "interact": 0.761903595928,
+      "move": 0.09523787484,
+      "wait": 0.0
+     },
+     "target": "bookshelf_02"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.37776936769,
+      "interact": 0.555563261399,
+      "move": 0.066667370911,
+      "wait": 0.0
+     },
+     "target": "filing_cabinet_01"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.37776936769,
+      "interact": 0.555563261399,
+      "move": 0.066667370911,
+      "wait": 0.0
+     },
+     "target": "bookshelf_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 1e-12,
+      "interact": 2e-12,
+      "move": 0.999880468517,
+      "place_trap": 0.00011953148,
+      "wait": 0.0
+     },
+     "target": "door_archives_corridor"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.142858529232,
+      "interact": 0.761903595928,
+      "move": 0.09523787484,
+      "wait": 0.0
+     },
+     "target": "bookshelf_03"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.0,
+      "interact": 0.0,
+      "move": 0.999968665539,
+      "place_trap": 3.133446e-05,
+      "wait": 0.0
+     },
+     "target": "armchair_02"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "approach_opponent": 0.16605019239,
+      "avoid_opponent": 0.0,
+      "inspect": 1.0571897e-05,
+      "interact": 2.6767243e-05,
+      "move": 0.1694390598,
+      "place_trap": 0.66447340867,
+      "wait": 0.0
+     },
+     "target": "bookshelf_03"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 1e-12,
+      "interact": 2e-12,
+      "move": 0.999880468517,
+      "place_trap": 0.00011953148,
+      "wait": 0.0
+     },
+     "target": "ambassador_safe"
+    }
+   ],
+   "emulator_hash": "sha256:d4bafb89314c6b96"
+  },
+  "b1|sonnet55:cautious": {
+   "decisions": [
+    {
+     "action": "move",
+     "probs": {
+      "move": 0.864294998008,
+      "wait": 0.135705001992
+     },
+     "target": "door_reception_corridor"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "approach_opponent": 0.213903808749,
+      "avoid_opponent": 6e-12,
+      "interact": 0.071484375635,
+      "move": 0.714404296368,
+      "wait": 0.000207519242
+     },
+     "target": "exit_door"
+    },
+    {
+     "action": "inspect",
+     "probs": {
+      "inspect": 0.518987343589,
+      "interact": 0.46835442892,
+      "move": 0.012658227491,
+      "wait": 0.0
+     },
+     "target": "lamp_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "move": 0.864294998008,
+      "wait": 0.135705001992
+     },
+     "target": "door_reception_corridor"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.0,
+      "interact": 0.0,
+      "move": 0.999999959396,
+      "place_trap": 4.0604e-08,
+      "wait": 0.0
+     },
+     "target": "door_main_office_ambassador"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "interact": 0.078115708424,
+      "move": 0.796779981951,
+      "wait": 0.125104309625
+     },
+     "target": "door_archives_corridor"
+    },
+    {
+     "action": "inspect",
+     "probs": {
+      "inspect": 0.518987343589,
+      "interact": 0.46835442892,
+      "move": 0.012658227491,
+      "wait": 0.0
+     },
+     "target": "armchair_02"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "interact": 0.078115708424,
+      "move": 0.796779981951,
+      "wait": 0.125104309625
+     },
+     "target": "plant_03"
+    },
+    {
+     "action": "inspect",
+     "probs": {
+      "inspect": 0.518987343589,
+      "interact": 0.46835442892,
+      "move": 0.012658227491,
+      "wait": 0.0
+     },
+     "target": "bookshelf_02"
+    },
+    {
+     "action": "inspect",
+     "probs": {
+      "inspect": 0.518987343589,
+      "interact": 0.46835442892,
+      "move": 0.012658227491,
+      "wait": 0.0
+     },
+     "target": "bookshelf_01"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.518987343589,
+      "interact": 0.46835442892,
+      "move": 0.012658227491,
+      "wait": 0.0
+     },
+     "target": "side_table_01"
+    },
+    {
+     "action": "inspect",
+     "probs": {
+      "approach_opponent": 0.0,
+      "avoid_opponent": 0.0,
+      "inspect": 0.363751840684,
+      "interact": 0.545500734567,
+      "move": 0.090747424749,
+      "wait": 0.0
+     },
+     "target": "lamp_01"
+    }
+   ],
+   "emulator_hash": "sha256:b9eb2b9f67f6bbbe"
+  },
+  "b2_v1|gpt61sol:saboteur": {
+   "decisions": [
+    {
+     "action": "move",
+     "probs": {
+      "move": 0.999881772146,
+      "wait": 0.000118227854
+     },
+     "target": "sofa_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.009372988281,
+      "interact": 0.07144785648,
+      "move": 0.919067197282,
+      "wait": 0.000111957957
+     },
+     "target": "plant_03"
+    },
+    {
+     "action": "approach_opponent",
+     "probs": {
+      "approach_opponent": 0.032930109925,
+      "avoid_opponent": 0.001475904806,
+      "inspect": 0.054964687788,
+      "interact": 0.900812870423,
+      "move": 0.009700462477,
+      "wait": 0.000115964581
+     },
+     "target": "black_spy"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "interact": 0.859504867728,
+      "move": 0.140382285073,
+      "wait": 0.000112847199
+     },
+     "target": "statue_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.150870048882,
+      "interact": 0.832424464157,
+      "move": 0.016593560828,
+      "wait": 0.000111926134
+     },
+     "target": "plant_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.927165256351,
+      "interact": 0.061180474379,
+      "move": 0.011542539654,
+      "wait": 0.000111729617
+     },
+     "target": "filing_cabinet_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.624123066575,
+      "interact": 0.358612712378,
+      "move": 0.017152577158,
+      "wait": 0.000111643889
+     },
+     "target": "sofa_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.015189566313,
+      "interact": 0.002552495328,
+      "move": 0.981895977944,
+      "place_trap": 0.000250641738,
+      "wait": 0.000111318677
+     },
+     "target": "door_archives_corridor"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.002574948452,
+      "interact": 0.980553211921,
+      "move": 0.016758676182,
+      "wait": 0.000113163445
+     },
+     "target": "bookshelf_03"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.000489606535,
+      "interact": 0.034772414962,
+      "move": 0.964116719288,
+      "place_trap": 0.000509392097,
+      "wait": 0.000111867117
+     },
+     "target": "armchair_02"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "approach_opponent": 0.034561454454,
+      "avoid_opponent": 0.001832073625,
+      "inspect": 0.00416576985,
+      "interact": 0.016093514641,
+      "move": 0.654567983901,
+      "place_trap": 0.288667823136,
+      "wait": 0.000111380394
+     },
+     "target": "bookshelf_03"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.002660101884,
+      "interact": 0.000440058522,
+      "move": 0.996623477767,
+      "place_trap": 0.00016513172,
+      "wait": 0.000111230107
+     },
+     "target": "ambassador_safe"
+    }
+   ],
+   "emulator_hash": "sha256:9b9e352f1344fba3"
+  },
+  "b2_v1|sonnet55:cautious": {
+   "decisions": [
+    {
+     "action": "move",
+     "probs": {
+      "move": 0.999881822231,
+      "wait": 0.000118177769
+     },
+     "target": "door_reception_corridor"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "approach_opponent": 0.059194798531,
+      "avoid_opponent": 0.015792223126,
+      "interact": 0.616804429658,
+      "move": 0.307002156552,
+      "wait": 0.001206392133
+     },
+     "target": "exit_door"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.004624876698,
+      "interact": 0.911832394605,
+      "move": 0.083257563709,
+      "wait": 0.000285164989
+     },
+     "target": "lamp_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "move": 0.999881822231,
+      "wait": 0.000118177769
+     },
+     "target": "door_reception_corridor"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.002846434125,
+      "interact": 0.002049960365,
+      "move": 0.994730162367,
+      "place_trap": 0.000165798072,
+      "wait": 0.000207645071
+     },
+     "target": "door_main_office_ambassador"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "interact": 0.688765179531,
+      "move": 0.310994944299,
+      "wait": 0.00023987617
+     },
+     "target": "door_archives_corridor"
+    },
+    {
+     "action": "inspect",
+     "probs": {
+      "inspect": 0.980026373032,
+      "interact": 0.002709375928,
+      "move": 0.016751796101,
+      "wait": 0.000512454939
+     },
+     "target": "armchair_02"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "interact": 0.062003886978,
+      "move": 0.937842914297,
+      "wait": 0.000153198726
+     },
+     "target": "plant_03"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.003345576315,
+      "interact": 0.979581694951,
+      "move": 0.016956339919,
+      "wait": 0.000116388815
+     },
+     "target": "bookshelf_02"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.000590147201,
+      "interact": 0.99872416672,
+      "move": 0.000548632346,
+      "wait": 0.000137053732
+     },
+     "target": "bookshelf_01"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.001622731995,
+      "interact": 0.9951329917,
+      "move": 0.003132831906,
+      "wait": 0.000111444398
+     },
+     "target": "side_table_01"
+    },
+    {
+     "action": "inspect",
+     "probs": {
+      "approach_opponent": 0.000749279824,
+      "avoid_opponent": 0.022085943325,
+      "inspect": 0.888024956964,
+      "interact": 0.000428918843,
+      "move": 0.088568610146,
+      "wait": 0.000142290899
+     },
+     "target": "lamp_01"
+    }
+   ],
+   "emulator_hash": "sha256:a4e30c16b1a9a25d"
+  },
+  "b2_v2|gpt61sol:saboteur": {
+   "decisions": [
+    {
+     "action": "move",
+     "probs": {
+      "move": 0.999885193765,
+      "wait": 0.000114806235
+     },
+     "target": "sofa_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.006975439007,
+      "interact": 0.063527568371,
+      "move": 0.929385187363,
+      "wait": 0.000111805259
+     },
+     "target": "plant_03"
+    },
+    {
+     "action": "approach_opponent",
+     "probs": {
+      "approach_opponent": 0.057995386036,
+      "avoid_opponent": 0.00109123002,
+      "inspect": 0.117802349963,
+      "interact": 0.806203407059,
+      "move": 0.016790617892,
+      "wait": 0.000117009031
+     },
+     "target": "black_spy"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "interact": 0.868494378353,
+      "move": 0.131392348147,
+      "wait": 0.0001132735
+     },
+     "target": "statue_01"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.064698758797,
+      "interact": 0.92032451483,
+      "move": 0.014865257064,
+      "wait": 0.00011146931
+     },
+     "target": "bookshelf_02"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.939899729539,
+      "interact": 0.050748686339,
+      "move": 0.009240276057,
+      "wait": 0.000111308065
+     },
+     "target": "filing_cabinet_01"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.51508117456,
+      "interact": 0.457440852633,
+      "move": 0.027366627322,
+      "wait": 0.000111345485
+     },
+     "target": "bookshelf_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.023267871001,
+      "interact": 0.001073463243,
+      "move": 0.973645955071,
+      "place_trap": 0.001901457254,
+      "wait": 0.00011125343
+     },
+     "target": "door_archives_corridor"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.001134893025,
+      "interact": 0.986023582142,
+      "move": 0.012726319238,
+      "wait": 0.000115205595
+     },
+     "target": "bookshelf_03"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.000299072908,
+      "interact": 0.037786767801,
+      "move": 0.960703659625,
+      "place_trap": 0.001098611914,
+      "wait": 0.000111887753
+     },
+     "target": "armchair_02"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "approach_opponent": 0.051944047786,
+      "avoid_opponent": 0.000677381723,
+      "inspect": 0.008494944723,
+      "interact": 0.004905775969,
+      "move": 0.453332861245,
+      "place_trap": 0.480533796517,
+      "wait": 0.000111192038
+     },
+     "target": "bookshelf_03"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.009555078063,
+      "interact": 0.000643864676,
+      "move": 0.987611611934,
+      "place_trap": 0.002078177985,
+      "wait": 0.000111267342
+     },
+     "target": "ambassador_safe"
+    }
+   ],
+   "emulator_hash": "sha256:537589734216e916"
+  },
+  "b2_v2|sonnet55:cautious": {
+   "decisions": [
+    {
+     "action": "move",
+     "probs": {
+      "move": 0.999882296349,
+      "wait": 0.000117703651
+     },
+     "target": "door_reception_corridor"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "approach_opponent": 0.035877376793,
+      "avoid_opponent": 0.002092764644,
+      "interact": 0.779387513318,
+      "move": 0.182190520189,
+      "wait": 0.000451825055
+     },
+     "target": "exit_door"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.00140751078,
+      "interact": 0.940945182034,
+      "move": 0.057499886897,
+      "wait": 0.000147420288
+     },
+     "target": "lamp_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "move": 0.999882296349,
+      "wait": 0.000117703651
+     },
+     "target": "door_reception_corridor"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.005593582243,
+      "interact": 0.000351476513,
+      "move": 0.993615706315,
+      "place_trap": 0.000217776616,
+      "wait": 0.000221458312
+     },
+     "target": "door_main_office_ambassador"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "interact": 0.698240841999,
+      "move": 0.301528028786,
+      "wait": 0.000231129215
+     },
+     "target": "door_archives_corridor"
+    },
+    {
+     "action": "inspect",
+     "probs": {
+      "inspect": 0.987938736375,
+      "interact": 0.002451720141,
+      "move": 0.009198827761,
+      "wait": 0.000410715723
+     },
+     "target": "armchair_02"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "interact": 0.104372074206,
+      "move": 0.895489943389,
+      "wait": 0.000137982404
+     },
+     "target": "plant_03"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.001512101214,
+      "interact": 0.987862611962,
+      "move": 0.010511296526,
+      "wait": 0.000113990297
+     },
+     "target": "bookshelf_02"
+    },
+    {
+     "action": "interact",
+     "probs": {
+      "inspect": 0.000919099913,
+      "interact": 0.997892214651,
+      "move": 0.0010243498,
+      "wait": 0.000164335637
+     },
+     "target": "bookshelf_01"
+    },
+    {
+     "action": "move",
+     "probs": {
+      "inspect": 0.004878781164,
+      "interact": 0.982904131683,
+      "move": 0.012105276533,
+      "wait": 0.00011181062
+     },
+     "target": "plant_02"
+    },
+    {
+     "action": "inspect",
+     "probs": {
+      "approach_opponent": 0.003244509613,
+      "avoid_opponent": 0.007927690769,
+      "inspect": 0.844761076759,
+      "interact": 0.003799047892,
+      "move": 0.140125377512,
+      "wait": 0.000142297455
+     },
+     "target": "lamp_01"
+    }
+   ],
+   "emulator_hash": "sha256:76a24af39269499a"
+  }
+ },
+ "rows": [
+  {
+   "decision_id": "f7e92d70-6aad-4eb5-ae6a-fa15a0b4be19",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "772221d6-3dff-4841-bf59-308fa61d209e",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "714c7883-29db-4466-8354-dda5893fd9bb",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "774d26b3-d340-4761-ba19-e256827786cb",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "6e34617b-696a-403b-b333-fb50bc9f0760",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "0ac864ec-b10e-4a3e-94af-6a3d65aa961c",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "a452ba3d-a1ce-44f3-92a8-19b6fb8e9a69",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "8cbaf41f-cb29-4921-a9e0-80adfacc6580",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "48eb9d14-528a-4dcb-9eae-ce3240175949",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "1c8c7a4b-10eb-4b32-a0c5-8155ea4d5c8d",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "3f333314-666b-4e39-b139-a407b381ff98",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "b32fab14-c17b-4594-b974-59a6e9f8b2bd",
+   "key": "sonnet55:cautious"
+  },
+  {
+   "decision_id": "e1b1d73b-2164-4c9f-937b-5f1f60c35241",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "4958f8a6-ee3b-4a28-b7ed-4febff5d9489",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "3b4d4c33-9b8b-4e79-a81e-a4b1250726e2",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "5588aa8d-4b04-44ad-8914-bad3edbdc847",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "db389888-d112-4d84-922c-bc1f2db12cf7",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "38d8568e-30cb-4c42-b6c4-7ce0b9fbafa3",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "81a6d810-67f5-47a6-84b2-0e87308fe547",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "bfeb0f69-7bbe-4eb0-bbfa-602784037b7f",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "b6a4c2d3-7ae6-457c-bff1-0da6839a6919",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "00f9502f-1623-48fc-87d4-2a5dbf5ac38f",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "53b77a5f-85bf-4ad8-ac5b-dcc2ec0b3ceb",
+   "key": "gpt61sol:saboteur"
+  },
+  {
+   "decision_id": "7911ddcb-9160-4cab-994b-6c4b188b3523",
+   "key": "gpt61sol:saboteur"
+  }
+ ]
+}

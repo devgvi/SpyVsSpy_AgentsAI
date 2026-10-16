@@ -1,0 +1,38 @@
+{
+  "policy_key": "sonnet55:opportunist",
+  "candidate": "C1",
+  "rows": 613,
+  "phase_a_rows": 547,
+  "hard_rows": 66,
+  "weights": {
+    "phase_a": 1.0,
+    "hard": 1.0
+  },
+  "actions": {
+    "move": 336,
+    "interact": 215,
+    "approach_opponent": 17,
+    "inspect": 12,
+    "avoid_opponent": 11,
+    "enter_safe_code": 10,
+    "place_trap": 8,
+    "wait": 4
+  },
+  "columns": 103,
+  "classes": [
+    "wait",
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 146,
+    "objective": 137.72514764355032,
+    "n_params": 832
+  },
+  "seconds": 1.83
+}

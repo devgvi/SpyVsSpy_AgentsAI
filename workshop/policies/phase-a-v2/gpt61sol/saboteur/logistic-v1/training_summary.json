@@ -1,0 +1,50 @@
+{
+  "policy_key": "gpt61sol:saboteur",
+  "emulator": "logistic-v1",
+  "training_records": 381,
+  "seeds": {
+    "7101": 61,
+    "7202": 64,
+    "7303": 51,
+    "7422": 78,
+    "7435": 50,
+    "7457": 77
+  },
+  "matches": 12,
+  "actions": {
+    "move": 158,
+    "interact": 133,
+    "inspect": 49,
+    "approach_opponent": 16,
+    "place_trap": 13,
+    "disarm": 4,
+    "enter_safe_code": 4,
+    "avoid_opponent": 4
+  },
+  "categories": {
+    "MOVE_PROGRESS": 161,
+    "SEARCH": 125,
+    "INSPECT": 49,
+    "APPROACH": 16,
+    "PLACE_TRAP": 13,
+    "EXIT": 9,
+    "DISARM": 4,
+    "AVOID": 4
+  },
+  "columns": 105,
+  "classes": [
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "disarm",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 112,
+    "objective": 131.99332919537986,
+    "n_params": 848
+  }
+}

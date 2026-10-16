@@ -1,0 +1,50 @@
+{
+  "artifact_version": "policy-artifact-v2",
+  "policy_key": "sonnet55:saboteur",
+  "policy_id": "sonnet55__saboteur__stage5a-C1",
+  "model": "sonnet55",
+  "model_id": "us.anthropic.claude-sonnet-5-5",
+  "personality": "saboteur",
+  "candidate": "C1",
+  "candidate_definition": "Phase-A CLEAN + every promoted TRAIN hard example (status kept), unweighted (the 1x point of the C2 grid)",
+  "training_dataset": "stage5a:C1",
+  "training_dataset_hash": "sha256:f284935d6796a9a6",
+  "phase_a_dataset_hash": "sha256:90a0f39349ab509a",
+  "stage5a_data_hash": "sha256:f284935d6796a9a6",
+  "promotion_policy_hash": "sha256:8504fba41f9e2914",
+  "split_hash": "sha256:014fb58caeae5034",
+  "selection_protocol_hash": "sha256:de48900d83464e4e",
+  "training_records": 694,
+  "training_composition": {
+    "phase_a_clean": 514,
+    "hard_examples": 180,
+    "hard_by_source": {
+      "m4b": 66,
+      "m4d": 53,
+      "stage4b": 61
+    }
+  },
+  "hard_weight": 1.0,
+  "weight_normalization": null,
+  "feature_schema_version": "policy-features-v1",
+  "created_utc": "2026-10-07T05:50:27+00:00",
+  "kind": "action",
+  "emulator": "logistic-v1",
+  "training_config": {
+    "c": 1.0,
+    "class_weight": "none",
+    "feature_set": "full"
+  },
+  "action_vocabulary": [
+    "wait",
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "disarm",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "content_hash": "sha256:30f4b3da04efe312"
+}

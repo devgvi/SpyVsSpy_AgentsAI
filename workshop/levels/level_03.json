@@ -1,0 +1,1379 @@
+{
+  "id": "level_03",
+  "name": "Embassy - Level 3 (planning / backtracking shift)",
+  "size": [
+    1888,
+    844
+  ],
+  "player_spawn": [
+    1252,
+    636
+  ],
+  "white_spy_spawn": [
+    1372,
+    636
+  ],
+  "rooms": [
+    {
+      "id": "security_room",
+      "label": "Security Room",
+      "rect": [
+        48,
+        48,
+        320,
+        300
+      ]
+    },
+    {
+      "id": "archives",
+      "label": "Archives",
+      "rect": [
+        416,
+        48,
+        320,
+        300
+      ]
+    },
+    {
+      "id": "records_room",
+      "label": "Records Room",
+      "rect": [
+        784,
+        48,
+        320,
+        300
+      ]
+    },
+    {
+      "id": "library",
+      "label": "Library",
+      "rect": [
+        1152,
+        48,
+        320,
+        300
+      ]
+    },
+    {
+      "id": "reception",
+      "label": "Reception",
+      "rect": [
+        1520,
+        48,
+        320,
+        300
+      ]
+    },
+    {
+      "id": "ambassador_office",
+      "label": "Ambassador Office",
+      "rect": [
+        48,
+        396,
+        320,
+        400
+      ]
+    },
+    {
+      "id": "west_corridor",
+      "label": "West Corridor",
+      "rect": [
+        416,
+        396,
+        320,
+        400
+      ]
+    },
+    {
+      "id": "gallery",
+      "label": "Gallery",
+      "rect": [
+        784,
+        396,
+        320,
+        400
+      ]
+    },
+    {
+      "id": "main_office",
+      "label": "Main Office",
+      "rect": [
+        1152,
+        396,
+        320,
+        400
+      ]
+    },
+    {
+      "id": "lobby",
+      "label": "Lobby",
+      "rect": [
+        1520,
+        396,
+        320,
+        400
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "id": "wall_security_room_0",
+      "rect": [
+        0,
+        0,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_security_room_1",
+      "rect": [
+        0,
+        348,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_security_room_2",
+      "rect": [
+        0,
+        48,
+        48,
+        300
+      ]
+    },
+    {
+      "id": "wall_security_room_3",
+      "rect": [
+        368,
+        48,
+        48,
+        110
+      ]
+    },
+    {
+      "id": "wall_security_room_4",
+      "rect": [
+        368,
+        258,
+        48,
+        90
+      ]
+    },
+    {
+      "id": "wall_archives_0",
+      "rect": [
+        368,
+        0,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_archives_1",
+      "rect": [
+        368,
+        348,
+        142,
+        48
+      ]
+    },
+    {
+      "id": "wall_archives_2",
+      "rect": [
+        610,
+        348,
+        174,
+        48
+      ]
+    },
+    {
+      "id": "wall_archives_3",
+      "rect": [
+        736,
+        48,
+        48,
+        110
+      ]
+    },
+    {
+      "id": "wall_archives_4",
+      "rect": [
+        736,
+        258,
+        48,
+        90
+      ]
+    },
+    {
+      "id": "wall_records_room_0",
+      "rect": [
+        736,
+        0,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_records_room_1",
+      "rect": [
+        736,
+        348,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_records_room_2",
+      "rect": [
+        1104,
+        48,
+        48,
+        300
+      ]
+    },
+    {
+      "id": "wall_library_0",
+      "rect": [
+        1104,
+        0,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_library_1",
+      "rect": [
+        1104,
+        348,
+        174,
+        48
+      ]
+    },
+    {
+      "id": "wall_library_2",
+      "rect": [
+        1378,
+        348,
+        142,
+        48
+      ]
+    },
+    {
+      "id": "wall_library_3",
+      "rect": [
+        1472,
+        48,
+        48,
+        300
+      ]
+    },
+    {
+      "id": "wall_reception_0",
+      "rect": [
+        1472,
+        0,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_reception_1",
+      "rect": [
+        1472,
+        348,
+        158,
+        48
+      ]
+    },
+    {
+      "id": "wall_reception_2",
+      "rect": [
+        1730,
+        348,
+        158,
+        48
+      ]
+    },
+    {
+      "id": "wall_reception_3",
+      "rect": [
+        1840,
+        48,
+        48,
+        300
+      ]
+    },
+    {
+      "id": "wall_ambassador_office_0",
+      "rect": [
+        0,
+        796,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_ambassador_office_1",
+      "rect": [
+        0,
+        396,
+        48,
+        400
+      ]
+    },
+    {
+      "id": "wall_ambassador_office_2",
+      "rect": [
+        368,
+        396,
+        48,
+        146
+      ]
+    },
+    {
+      "id": "wall_ambassador_office_3",
+      "rect": [
+        368,
+        642,
+        48,
+        154
+      ]
+    },
+    {
+      "id": "wall_west_corridor_0",
+      "rect": [
+        368,
+        796,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_west_corridor_1",
+      "rect": [
+        736,
+        396,
+        48,
+        146
+      ]
+    },
+    {
+      "id": "wall_west_corridor_2",
+      "rect": [
+        736,
+        642,
+        48,
+        154
+      ]
+    },
+    {
+      "id": "wall_gallery_0",
+      "rect": [
+        736,
+        796,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_gallery_1",
+      "rect": [
+        1104,
+        396,
+        48,
+        146
+      ]
+    },
+    {
+      "id": "wall_gallery_2",
+      "rect": [
+        1104,
+        642,
+        48,
+        154
+      ]
+    },
+    {
+      "id": "wall_main_office_0",
+      "rect": [
+        1104,
+        796,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_main_office_1",
+      "rect": [
+        1472,
+        396,
+        48,
+        146
+      ]
+    },
+    {
+      "id": "wall_main_office_2",
+      "rect": [
+        1472,
+        642,
+        48,
+        154
+      ]
+    },
+    {
+      "id": "wall_lobby_0",
+      "rect": [
+        1472,
+        796,
+        416,
+        48
+      ]
+    },
+    {
+      "id": "wall_lobby_1",
+      "rect": [
+        1840,
+        396,
+        48,
+        146
+      ]
+    },
+    {
+      "id": "wall_lobby_2",
+      "rect": [
+        1840,
+        642,
+        48,
+        154
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "filing_cabinet_01",
+      "type": "filing_cabinet",
+      "label": "filing cabinet",
+      "collision_size": [
+        70,
+        75
+      ],
+      "render_width": 62,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the filing cabinet.",
+      "sprite": "assets/environment/filing_cabinet.png",
+      "position": [
+        72,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "locker_01",
+      "type": "filing_cabinet",
+      "label": "locker",
+      "collision_size": [
+        70,
+        75
+      ],
+      "render_width": 62,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the locker.",
+      "sprite": "assets/environment/filing_cabinet.png",
+      "position": [
+        72,
+        249
+      ],
+      "contains": []
+    },
+    {
+      "id": "globe_01",
+      "type": "globe",
+      "label": "globe",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 52,
+      "solid": false,
+      "interactable": true,
+      "interaction": "inspect",
+      "message": "You inspect the globe.",
+      "sprite": "assets/environment/globe.png",
+      "position": [
+        304,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "lamp_01",
+      "type": "lamp",
+      "label": "desk lamp",
+      "collision_size": [
+        30,
+        30
+      ],
+      "render_width": 40,
+      "solid": false,
+      "interactable": true,
+      "interaction": "inspect",
+      "message": "You inspect the lamp.",
+      "sprite": "assets/environment/lamp.png",
+      "position": [
+        314,
+        294
+      ],
+      "contains": []
+    },
+    {
+      "id": "bookshelf_01",
+      "type": "bookshelf",
+      "label": "bookshelf",
+      "collision_size": [
+        70,
+        110
+      ],
+      "render_width": 100,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the bookshelf.",
+      "sprite": "assets/environment/bookshelf.png",
+      "position": [
+        520,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "plant_01",
+      "type": "plant",
+      "label": "plant",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 48,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the plant.",
+      "sprite": "assets/environment/plant_small.png",
+      "position": [
+        440,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "side_table_01",
+      "type": "side_table",
+      "label": "side table",
+      "collision_size": [
+        50,
+        50
+      ],
+      "render_width": 62,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the side table.",
+      "sprite": "assets/environment/side_table.png",
+      "position": [
+        662,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "filing_cabinet_02",
+      "type": "filing_cabinet",
+      "label": "filing cabinet",
+      "collision_size": [
+        70,
+        75
+      ],
+      "render_width": 62,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the filing cabinet.",
+      "sprite": "assets/environment/filing_cabinet.png",
+      "position": [
+        1010,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "bookshelf_02",
+      "type": "bookshelf",
+      "label": "bookshelf",
+      "collision_size": [
+        70,
+        110
+      ],
+      "render_width": 100,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the bookshelf.",
+      "sprite": "assets/environment/bookshelf.png",
+      "position": [
+        1010,
+        214
+      ],
+      "contains": []
+    },
+    {
+      "id": "plant_02",
+      "type": "plant",
+      "label": "plant",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 48,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the plant.",
+      "sprite": "assets/environment/plant_small.png",
+      "position": [
+        808,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "bookshelf_03",
+      "type": "bookshelf",
+      "label": "bookshelf",
+      "collision_size": [
+        70,
+        110
+      ],
+      "render_width": 100,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the bookshelf.",
+      "sprite": "assets/environment/bookshelf.png",
+      "position": [
+        1176,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "bookshelf_04",
+      "type": "bookshelf",
+      "label": "bookshelf",
+      "collision_size": [
+        70,
+        110
+      ],
+      "render_width": 100,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the bookshelf.",
+      "sprite": "assets/environment/bookshelf.png",
+      "position": [
+        1378,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "armchair_01",
+      "type": "armchair",
+      "label": "armchair",
+      "collision_size": [
+        60,
+        60
+      ],
+      "render_width": 70,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the armchair.",
+      "sprite": "assets/environment/armchair.png",
+      "position": [
+        1176,
+        264
+      ],
+      "contains": []
+    },
+    {
+      "id": "globe_02",
+      "type": "globe",
+      "label": "globe",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 52,
+      "solid": false,
+      "interactable": true,
+      "interaction": "inspect",
+      "message": "You inspect the globe.",
+      "sprite": "assets/environment/globe.png",
+      "position": [
+        1408,
+        284
+      ],
+      "contains": []
+    },
+    {
+      "id": "sofa_01",
+      "type": "sofa",
+      "label": "sofa",
+      "collision_size": [
+        180,
+        80
+      ],
+      "render_width": 165,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the sofa.",
+      "sprite": "assets/environment/sofa.png",
+      "position": [
+        1544,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "side_table_02",
+      "type": "side_table",
+      "label": "side table",
+      "collision_size": [
+        50,
+        50
+      ],
+      "render_width": 62,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the side table.",
+      "sprite": "assets/environment/side_table.png",
+      "position": [
+        1766,
+        72
+      ],
+      "contains": []
+    },
+    {
+      "id": "plant_03",
+      "type": "plant",
+      "label": "plant",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 48,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the plant.",
+      "sprite": "assets/environment/plant_small.png",
+      "position": [
+        1544,
+        284
+      ],
+      "contains": []
+    },
+    {
+      "id": "ambassador_safe",
+      "type": "safe",
+      "label": "ambassador's safe",
+      "collision_size": [
+        70,
+        60
+      ],
+      "render_width": 60,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You crack the safe.",
+      "sprite": "assets/environment/filing_cabinet.png",
+      "lock_type": "code",
+      "requires": "safe_code",
+      "position": [
+        72,
+        420
+      ],
+      "contains": []
+    },
+    {
+      "id": "armchair_02",
+      "type": "armchair",
+      "label": "armchair",
+      "collision_size": [
+        60,
+        60
+      ],
+      "render_width": 70,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the armchair.",
+      "sprite": "assets/environment/armchair.png",
+      "position": [
+        284,
+        420
+      ],
+      "contains": []
+    },
+    {
+      "id": "painting_01",
+      "type": "painting",
+      "label": "painting",
+      "collision_size": [
+        140,
+        50
+      ],
+      "render_width": 140,
+      "solid": false,
+      "interactable": true,
+      "interaction": "inspect",
+      "message": "You inspect the painting.",
+      "sprite": "assets/environment/painting.png",
+      "position": [
+        72,
+        722
+      ],
+      "contains": []
+    },
+    {
+      "id": "statue_bust_01",
+      "type": "statue_bust",
+      "label": "statue",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 50,
+      "solid": false,
+      "interactable": true,
+      "interaction": "inspect",
+      "message": "You inspect the statue.",
+      "sprite": "assets/environment/statue_bust.png",
+      "position": [
+        304,
+        732
+      ],
+      "contains": []
+    },
+    {
+      "id": "plant_04",
+      "type": "plant",
+      "label": "plant",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 65,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the plant.",
+      "sprite": "assets/environment/plant_large.png",
+      "position": [
+        440,
+        420
+      ],
+      "contains": []
+    },
+    {
+      "id": "painting_02",
+      "type": "painting",
+      "label": "painting",
+      "collision_size": [
+        140,
+        50
+      ],
+      "render_width": 140,
+      "solid": false,
+      "interactable": true,
+      "interaction": "inspect",
+      "message": "You inspect the painting.",
+      "sprite": "assets/environment/painting.png",
+      "position": [
+        440,
+        722
+      ],
+      "contains": []
+    },
+    {
+      "id": "statue_bust_02",
+      "type": "statue_bust",
+      "label": "statue",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 50,
+      "solid": false,
+      "interactable": true,
+      "interaction": "inspect",
+      "message": "You inspect the statue.",
+      "sprite": "assets/environment/statue_bust.png",
+      "position": [
+        808,
+        420
+      ],
+      "contains": []
+    },
+    {
+      "id": "painting_03",
+      "type": "painting",
+      "label": "painting",
+      "collision_size": [
+        140,
+        50
+      ],
+      "render_width": 140,
+      "solid": false,
+      "interactable": true,
+      "interaction": "inspect",
+      "message": "You inspect the painting.",
+      "sprite": "assets/environment/painting.png",
+      "position": [
+        940,
+        420
+      ],
+      "contains": []
+    },
+    {
+      "id": "side_table_03",
+      "type": "side_table",
+      "label": "side table",
+      "collision_size": [
+        50,
+        50
+      ],
+      "render_width": 62,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the side table.",
+      "sprite": "assets/environment/side_table.png",
+      "position": [
+        808,
+        722
+      ],
+      "contains": []
+    },
+    {
+      "id": "desk_01",
+      "type": "desk",
+      "label": "desk",
+      "collision_size": [
+        240,
+        110
+      ],
+      "render_width": 220,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the desk.",
+      "sprite": "assets/environment/desk.png",
+      "position": [
+        1176,
+        662
+      ],
+      "contains": []
+    },
+    {
+      "id": "armchair_03",
+      "type": "armchair",
+      "label": "armchair",
+      "collision_size": [
+        60,
+        60
+      ],
+      "render_width": 70,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the armchair.",
+      "sprite": "assets/environment/armchair.png",
+      "position": [
+        1176,
+        420
+      ],
+      "contains": []
+    },
+    {
+      "id": "plant_05",
+      "type": "plant",
+      "label": "plant",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 48,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the plant.",
+      "sprite": "assets/environment/plant_small.png",
+      "position": [
+        1408,
+        420
+      ],
+      "contains": []
+    },
+    {
+      "id": "sofa_02",
+      "type": "sofa",
+      "label": "sofa",
+      "collision_size": [
+        180,
+        80
+      ],
+      "render_width": 165,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the sofa.",
+      "sprite": "assets/environment/sofa.png",
+      "position": [
+        1544,
+        692
+      ],
+      "contains": []
+    },
+    {
+      "id": "plant_06",
+      "type": "plant",
+      "label": "plant",
+      "collision_size": [
+        40,
+        40
+      ],
+      "render_width": 65,
+      "solid": true,
+      "interactable": true,
+      "interaction": "search",
+      "message": "You search the plant.",
+      "sprite": "assets/environment/plant_large.png",
+      "position": [
+        1544,
+        420
+      ],
+      "contains": []
+    },
+    {
+      "id": "door_main_office_lobby",
+      "type": "door",
+      "label": "Lobby door",
+      "position": [
+        1472,
+        542
+      ],
+      "collision_size": [
+        48,
+        100
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": "The lobby door opens.",
+      "default_state": "open",
+      "rooms": [
+        "main_office",
+        "lobby"
+      ],
+      "render_offset": [
+        0.0,
+        2.0
+      ],
+      "sprite": "assets/doors/door_vertical_closed.png",
+      "sprite_open": "assets/doors/door_vertical_open.png",
+      "render_width": 48,
+      "render_height": 96
+    },
+    {
+      "id": "door_reception_lobby",
+      "type": "door",
+      "label": "Reception door",
+      "position": [
+        1630,
+        348
+      ],
+      "collision_size": [
+        100,
+        48
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": "The reception door opens.",
+      "default_state": "open",
+      "rooms": [
+        "reception",
+        "lobby"
+      ],
+      "render_offset": [
+        2.0,
+        0.0
+      ],
+      "sprite": "assets/doors/door_horizontal_closed.png",
+      "sprite_open": "assets/doors/door_horizontal_open.png",
+      "render_width": 96,
+      "render_height": 48
+    },
+    {
+      "id": "door_gallery_main_office",
+      "type": "door",
+      "label": "Gallery door",
+      "position": [
+        1104,
+        542
+      ],
+      "collision_size": [
+        48,
+        100
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": "The gallery door opens.",
+      "default_state": "open",
+      "rooms": [
+        "gallery",
+        "main_office"
+      ],
+      "render_offset": [
+        0.0,
+        2.0
+      ],
+      "sprite": "assets/doors/door_vertical_closed.png",
+      "sprite_open": "assets/doors/door_vertical_open.png",
+      "render_width": 48,
+      "render_height": 96
+    },
+    {
+      "id": "door_library_main_office",
+      "type": "door",
+      "label": "Library door",
+      "position": [
+        1278,
+        348
+      ],
+      "collision_size": [
+        100,
+        48
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": "The library door opens.",
+      "default_state": "open",
+      "rooms": [
+        "library",
+        "main_office"
+      ],
+      "render_offset": [
+        2.0,
+        0.0
+      ],
+      "sprite": "assets/doors/door_horizontal_closed.png",
+      "sprite_open": "assets/doors/door_horizontal_open.png",
+      "render_width": 96,
+      "render_height": 48
+    },
+    {
+      "id": "door_west_corridor_gallery",
+      "type": "door",
+      "label": "West Corridor door",
+      "position": [
+        736,
+        542
+      ],
+      "collision_size": [
+        48,
+        100
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": "The west corridor door opens.",
+      "default_state": "open",
+      "rooms": [
+        "west_corridor",
+        "gallery"
+      ],
+      "render_offset": [
+        0.0,
+        2.0
+      ],
+      "sprite": "assets/doors/door_vertical_closed.png",
+      "sprite_open": "assets/doors/door_vertical_open.png",
+      "render_width": 48,
+      "render_height": 96
+    },
+    {
+      "id": "door_ambassador_office_west_corridor",
+      "type": "door",
+      "label": "Ambassador Office door",
+      "position": [
+        368,
+        542
+      ],
+      "collision_size": [
+        48,
+        100
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": "The ambassador office door opens.",
+      "default_state": "open",
+      "rooms": [
+        "ambassador_office",
+        "west_corridor"
+      ],
+      "render_offset": [
+        0.0,
+        2.0
+      ],
+      "sprite": "assets/doors/door_vertical_closed.png",
+      "sprite_open": "assets/doors/door_vertical_open.png",
+      "render_width": 48,
+      "render_height": 96
+    },
+    {
+      "id": "door_archives_west_corridor",
+      "type": "door",
+      "label": "Archives door",
+      "position": [
+        510,
+        348
+      ],
+      "collision_size": [
+        100,
+        48
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": "The archives door unlocks and opens.",
+      "default_state": "locked",
+      "lock_type": "key",
+      "requires": "archive_key",
+      "rooms": [
+        "archives",
+        "west_corridor"
+      ],
+      "render_offset": [
+        2.0,
+        0.0
+      ],
+      "sprite": "assets/doors/door_horizontal_closed.png",
+      "sprite_open": "assets/doors/door_horizontal_open.png",
+      "sprite_locked": "assets/doors/door_horizontal_locked.png",
+      "render_width": 96,
+      "render_height": 48
+    },
+    {
+      "id": "door_archives_records_room",
+      "type": "door",
+      "label": "Archives door",
+      "position": [
+        736,
+        158
+      ],
+      "collision_size": [
+        48,
+        100
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": "The archives door opens.",
+      "default_state": "open",
+      "rooms": [
+        "archives",
+        "records_room"
+      ],
+      "render_offset": [
+        0.0,
+        2.0
+      ],
+      "sprite": "assets/doors/door_vertical_closed.png",
+      "sprite_open": "assets/doors/door_vertical_open.png",
+      "render_width": 48,
+      "render_height": 96
+    },
+    {
+      "id": "door_security_room_archives",
+      "type": "door",
+      "label": "Security Room door",
+      "position": [
+        368,
+        158
+      ],
+      "collision_size": [
+        48,
+        100
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": "The security room door unlocks and opens.",
+      "default_state": "locked",
+      "lock_type": "keycard",
+      "requires": "security_keycard",
+      "rooms": [
+        "security_room",
+        "archives"
+      ],
+      "render_offset": [
+        0.0,
+        2.0
+      ],
+      "sprite": "assets/doors/door_vertical_closed.png",
+      "sprite_open": "assets/doors/door_vertical_open.png",
+      "sprite_locked": "assets/doors/door_vertical_keycard.png",
+      "render_width": 48,
+      "render_height": 96
+    },
+    {
+      "id": "exit_door",
+      "type": "door",
+      "label": "Exit door",
+      "render_offset": [
+        0.0,
+        2.0
+      ],
+      "solid": true,
+      "interactable": true,
+      "interaction": "open",
+      "message": null,
+      "default_state": "closed",
+      "sprite": "assets/doors/door_vertical_closed.png",
+      "sprite_open": "assets/doors/door_vertical_open.png",
+      "render_width": 48,
+      "render_height": 96,
+      "position": [
+        1840,
+        542
+      ],
+      "collision_size": [
+        48,
+        100
+      ]
+    }
+  ]
+}

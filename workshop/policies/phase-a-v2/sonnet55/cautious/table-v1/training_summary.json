@@ -1,0 +1,48 @@
+{
+  "policy_key": "sonnet55:cautious",
+  "emulator": "table-v1",
+  "training_records": 670,
+  "seeds": {
+    "7101": 115,
+    "7202": 131,
+    "7303": 102,
+    "7422": 106,
+    "7435": 92,
+    "7457": 124
+  },
+  "matches": 12,
+  "actions": {
+    "move": 295,
+    "interact": 160,
+    "inspect": 155,
+    "avoid_opponent": 32,
+    "wait": 17,
+    "enter_safe_code": 7,
+    "approach_opponent": 3,
+    "place_trap": 1
+  },
+  "categories": {
+    "MOVE_PROGRESS": 292,
+    "INSPECT": 155,
+    "SEARCH": 151,
+    "AVOID": 32,
+    "EXIT": 19,
+    "WAIT": 17,
+    "APPROACH": 3,
+    "PLACE_TRAP": 1
+  },
+  "buckets_per_level": {
+    "0": 1,
+    "1": 2,
+    "2": 4,
+    "3": 5,
+    "4": 7,
+    "5": 11,
+    "6": 16,
+    "7": 16,
+    "8": 22,
+    "9": 31,
+    "10": 33,
+    "11": 36
+  }
+}

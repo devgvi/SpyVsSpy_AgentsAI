@@ -1,0 +1,2599 @@
+{
+ "schema": "spy-vs-ai-public-export-provenance/1",
+ "export_schema": "spy-vs-ai-public-export/1",
+ "public_repository": "spy-vs-ai",
+ "exported_utc": "2026-10-11T13:54:24+00:00",
+ "source": {
+  "git_commit": null,
+  "git_note": "the private research archive is not a git repository; source_tree_hash identifies the exported source files (their public paths and bytes, before the markdown link rewrite)",
+  "source_tree_hash": "sha256:17047898a92c96ce",
+  "game_code_fingerprint": "sha256:f1a7529308c66f48"
+ },
+ "manifest": {
+  "path": "PUBLIC_EXPORT_MANIFEST.yaml",
+  "sha256": "sha256:54e19e8b04d88fa505c038d8588adc70649027b1670ccd0fc05f14b517328446"
+ },
+ "documentation_version": "2026-10-10",
+ "paper": {
+  "version": "Paper 1, v2 final draft",
+  "public_path": "paper/SPY_VS_AI_PAPER.md",
+  "sha256": "sha256:1f10225e4d313343bc2f8128074f12441016a35c6bcbdf2a5958bea73c65516a"
+ },
+ "research_artifact_version": "spy-vs-ai-research-artifact-v1 (planned, not built)",
+ "version_mapping": {
+  "private_source_tree": "sha256:17047898a92c96ce",
+  "public_release": "not tagged yet (planned v1.0.0)",
+  "research_artifact": "spy-vs-ai-research-artifact-v1 (planned, not built)",
+  "paper": "Paper 1, v2 final draft"
+ },
+ "files": {
+  "count": 1363,
+  "bytes": 44857355,
+  "by_top_level": {
+   "requirements.txt": 1,
+   "CHANGELOG.md": 1,
+   "README.md": 1,
+   "requirements-dev.txt": 1,
+   ".gitignore": 1,
+   "paper": 1,
+   "workshop": 169,
+   "tools": 8,
+   "spy_vs_ai": 26,
+   "tests": 107,
+   "docs": 15,
+   "configs": 8,
+   "data": 2,
+   "assets": 794,
+   "src": 219,
+   "examples": 8
+  }
+ },
+ "renamed": {
+  "docs/research/SPY_VS_AI_PAPER_V2_FINAL_DRAFT.md": "paper/SPY_VS_AI_PAPER.md"
+ },
+ "overlays": [
+  ".gitignore",
+  "CHANGELOG.md",
+  "requirements-dev.txt",
+  "requirements.txt",
+  "tests/conftest.py",
+  "tests/test_public_frozen_policies.py",
+  "tests/test_public_repository.py"
+ ],
+ "markdown_links_made_text": {
+  "docs/research/RESULTS.md": 94
+ },
+ "archive_only_blocks_removed": {
+  "README.md": 2,
+  "assets/README.md": 1,
+  "docs/README.md": 1,
+  "docs/play/PLAYING_THE_GAME.md": 1,
+  "docs/research/RESULTS.md": 1
+ },
+ "scientific_artifacts": [
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/table-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/table-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/table-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/table-v1/metadata.json",
+   "frozen_sha256": "sha256:0b034c42d27f2ee9590c4f731bc3c1152a39e203da404454c4e4efd49156aa56",
+   "note": "",
+   "source_sha256": "sha256:0b034c42d27f2ee9590c4f731bc3c1152a39e203da404454c4e4efd49156aa56",
+   "exported_sha256": "sha256:0b034c42d27f2ee9590c4f731bc3c1152a39e203da404454c4e4efd49156aa56",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/table-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/table-v1/model.json",
+   "frozen_sha256": "sha256:8e1872bb74ea74aa99f97585da7d1accdc941099fc0109fd159a5df0a2d5303f",
+   "note": "",
+   "source_sha256": "sha256:8e1872bb74ea74aa99f97585da7d1accdc941099fc0109fd159a5df0a2d5303f",
+   "exported_sha256": "sha256:8e1872bb74ea74aa99f97585da7d1accdc941099fc0109fd159a5df0a2d5303f",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/table-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/table-v1/training_summary.json",
+   "frozen_sha256": "sha256:88ae4970d4cc12f020532aa02c5955cdb4c79d212cac1cf006466ac333152262",
+   "note": "",
+   "source_sha256": "sha256:88ae4970d4cc12f020532aa02c5955cdb4c79d212cac1cf006466ac333152262",
+   "exported_sha256": "sha256:88ae4970d4cc12f020532aa02c5955cdb4c79d212cac1cf006466ac333152262",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/table-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/table-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/table-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/table-v1/metadata.json",
+   "frozen_sha256": "sha256:045df3fb4e0ac7a47e03de31acdcabb4fcae45ae5c68d88fd702c44a6850351c",
+   "note": "",
+   "source_sha256": "sha256:045df3fb4e0ac7a47e03de31acdcabb4fcae45ae5c68d88fd702c44a6850351c",
+   "exported_sha256": "sha256:045df3fb4e0ac7a47e03de31acdcabb4fcae45ae5c68d88fd702c44a6850351c",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/table-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/table-v1/model.json",
+   "frozen_sha256": "sha256:f6ece2debd39e3b7f0f05f03e88d8ca124967a5bd17079add046562b07775486",
+   "note": "",
+   "source_sha256": "sha256:f6ece2debd39e3b7f0f05f03e88d8ca124967a5bd17079add046562b07775486",
+   "exported_sha256": "sha256:f6ece2debd39e3b7f0f05f03e88d8ca124967a5bd17079add046562b07775486",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/table-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/table-v1/training_summary.json",
+   "frozen_sha256": "sha256:6e8d6f47c0a2c9bb27c4f2c2ce7276e9091a0bb6f19baf1f5fd4df7f2d724fdb",
+   "note": "",
+   "source_sha256": "sha256:6e8d6f47c0a2c9bb27c4f2c2ce7276e9091a0bb6f19baf1f5fd4df7f2d724fdb",
+   "exported_sha256": "sha256:6e8d6f47c0a2c9bb27c4f2c2ce7276e9091a0bb6f19baf1f5fd4df7f2d724fdb",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/table-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/table-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/table-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/table-v1/metadata.json",
+   "frozen_sha256": "sha256:2afeffec6cb8a12e3de19b17be3ee42c53fc0a65dd34be7ed1c8e4923ff5d5c9",
+   "note": "",
+   "source_sha256": "sha256:2afeffec6cb8a12e3de19b17be3ee42c53fc0a65dd34be7ed1c8e4923ff5d5c9",
+   "exported_sha256": "sha256:2afeffec6cb8a12e3de19b17be3ee42c53fc0a65dd34be7ed1c8e4923ff5d5c9",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/table-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/table-v1/model.json",
+   "frozen_sha256": "sha256:de03ceab3195434269f45f3e0a3da0f3abe1353bfcd06fa7f9563bddadc811a5",
+   "note": "",
+   "source_sha256": "sha256:de03ceab3195434269f45f3e0a3da0f3abe1353bfcd06fa7f9563bddadc811a5",
+   "exported_sha256": "sha256:de03ceab3195434269f45f3e0a3da0f3abe1353bfcd06fa7f9563bddadc811a5",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/table-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/table-v1/training_summary.json",
+   "frozen_sha256": "sha256:a69a4d9892b1d06ccc3d3b06f34d31212c2770a001057f5aed542b3fa39ada98",
+   "note": "",
+   "source_sha256": "sha256:a69a4d9892b1d06ccc3d3b06f34d31212c2770a001057f5aed542b3fa39ada98",
+   "exported_sha256": "sha256:a69a4d9892b1d06ccc3d3b06f34d31212c2770a001057f5aed542b3fa39ada98",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/table-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/table-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/table-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/table-v1/metadata.json",
+   "frozen_sha256": "sha256:288c77294562a8fe8e5619df395755027f67dd94b41a2f921d591f3207c5b432",
+   "note": "",
+   "source_sha256": "sha256:288c77294562a8fe8e5619df395755027f67dd94b41a2f921d591f3207c5b432",
+   "exported_sha256": "sha256:288c77294562a8fe8e5619df395755027f67dd94b41a2f921d591f3207c5b432",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/table-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/table-v1/model.json",
+   "frozen_sha256": "sha256:600ea0855b4c8b7296537240970022fde1d9492ced7d4ea7e2c272eaaefbb763",
+   "note": "",
+   "source_sha256": "sha256:600ea0855b4c8b7296537240970022fde1d9492ced7d4ea7e2c272eaaefbb763",
+   "exported_sha256": "sha256:600ea0855b4c8b7296537240970022fde1d9492ced7d4ea7e2c272eaaefbb763",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/table-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/table-v1/training_summary.json",
+   "frozen_sha256": "sha256:97926a8f49d665cf26b90b297ed0f8dded4f8946c47e8c38560008eab6162e27",
+   "note": "",
+   "source_sha256": "sha256:97926a8f49d665cf26b90b297ed0f8dded4f8946c47e8c38560008eab6162e27",
+   "exported_sha256": "sha256:97926a8f49d665cf26b90b297ed0f8dded4f8946c47e8c38560008eab6162e27",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/table-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/table-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/table-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/table-v1/metadata.json",
+   "frozen_sha256": "sha256:903e3e0d7bcb581a8b34cd0c795869a5a3fc310c215c43f3dc1050782553641f",
+   "note": "",
+   "source_sha256": "sha256:903e3e0d7bcb581a8b34cd0c795869a5a3fc310c215c43f3dc1050782553641f",
+   "exported_sha256": "sha256:903e3e0d7bcb581a8b34cd0c795869a5a3fc310c215c43f3dc1050782553641f",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/table-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/table-v1/model.json",
+   "frozen_sha256": "sha256:ea074bb5af5942d8b511097ecfdb6bed7f105046fcc24000330953395ac45e3b",
+   "note": "",
+   "source_sha256": "sha256:ea074bb5af5942d8b511097ecfdb6bed7f105046fcc24000330953395ac45e3b",
+   "exported_sha256": "sha256:ea074bb5af5942d8b511097ecfdb6bed7f105046fcc24000330953395ac45e3b",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/table-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/table-v1/training_summary.json",
+   "frozen_sha256": "sha256:1bbe2d68fcfb591efad4581696051bc8cf6f32ed601d9495a6bfa95c18b752bd",
+   "note": "",
+   "source_sha256": "sha256:1bbe2d68fcfb591efad4581696051bc8cf6f32ed601d9495a6bfa95c18b752bd",
+   "exported_sha256": "sha256:1bbe2d68fcfb591efad4581696051bc8cf6f32ed601d9495a6bfa95c18b752bd",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/table-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/table-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/table-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/table-v1/metadata.json",
+   "frozen_sha256": "sha256:e014062b5671e567b15446b00e151bf754a138363f438d2b34a7a36776bb5c90",
+   "note": "",
+   "source_sha256": "sha256:e014062b5671e567b15446b00e151bf754a138363f438d2b34a7a36776bb5c90",
+   "exported_sha256": "sha256:e014062b5671e567b15446b00e151bf754a138363f438d2b34a7a36776bb5c90",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/table-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/table-v1/model.json",
+   "frozen_sha256": "sha256:13de449cd1ad0192a96b4172c1c491ab0763792eeb6ecb3757903fac3208b660",
+   "note": "",
+   "source_sha256": "sha256:13de449cd1ad0192a96b4172c1c491ab0763792eeb6ecb3757903fac3208b660",
+   "exported_sha256": "sha256:13de449cd1ad0192a96b4172c1c491ab0763792eeb6ecb3757903fac3208b660",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/table-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/table-v1/training_summary.json",
+   "frozen_sha256": "sha256:ce9869fab3c1121f887e119e35760cfaa6f87be1f28d6ace7b82d6615d22be1d",
+   "note": "",
+   "source_sha256": "sha256:ce9869fab3c1121f887e119e35760cfaa6f87be1f28d6ace7b82d6615d22be1d",
+   "exported_sha256": "sha256:ce9869fab3c1121f887e119e35760cfaa6f87be1f28d6ace7b82d6615d22be1d",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/table-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/table-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/table-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/table-v1/metadata.json",
+   "frozen_sha256": "sha256:fb9ddabc4926dec78f081781c4147848b61362bc0d2224d1cd8f6a0aed200d40",
+   "note": "",
+   "source_sha256": "sha256:fb9ddabc4926dec78f081781c4147848b61362bc0d2224d1cd8f6a0aed200d40",
+   "exported_sha256": "sha256:fb9ddabc4926dec78f081781c4147848b61362bc0d2224d1cd8f6a0aed200d40",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/table-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/table-v1/model.json",
+   "frozen_sha256": "sha256:a417995400a544cc9d04e94d86bf7e9b7d3e535623f8305816bb16e208322124",
+   "note": "",
+   "source_sha256": "sha256:a417995400a544cc9d04e94d86bf7e9b7d3e535623f8305816bb16e208322124",
+   "exported_sha256": "sha256:a417995400a544cc9d04e94d86bf7e9b7d3e535623f8305816bb16e208322124",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/table-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/table-v1/training_summary.json",
+   "frozen_sha256": "sha256:d697ce6dfc38d59afa6223bf9ad64270007234495b42e7539f4153d943eb6820",
+   "note": "",
+   "source_sha256": "sha256:d697ce6dfc38d59afa6223bf9ad64270007234495b42e7539f4153d943eb6820",
+   "exported_sha256": "sha256:d697ce6dfc38d59afa6223bf9ad64270007234495b42e7539f4153d943eb6820",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/table-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/table-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/table-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/table-v1/metadata.json",
+   "frozen_sha256": "sha256:849bf65f4940b45d684bf315c7c2ae48152d567fc788253d87789d7b3cfaa9c2",
+   "note": "",
+   "source_sha256": "sha256:849bf65f4940b45d684bf315c7c2ae48152d567fc788253d87789d7b3cfaa9c2",
+   "exported_sha256": "sha256:849bf65f4940b45d684bf315c7c2ae48152d567fc788253d87789d7b3cfaa9c2",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/table-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/table-v1/model.json",
+   "frozen_sha256": "sha256:f77d08360fe38465eaeff6c6572d441b100e76cb8e23dce615c4ccd403e2a1c2",
+   "note": "",
+   "source_sha256": "sha256:f77d08360fe38465eaeff6c6572d441b100e76cb8e23dce615c4ccd403e2a1c2",
+   "exported_sha256": "sha256:f77d08360fe38465eaeff6c6572d441b100e76cb8e23dce615c4ccd403e2a1c2",
+   "verified": true
+  },
+  {
+   "id": "B1",
+   "version": "table-v1",
+   "status": "SUPERSEDED (B2 was selected in Stage 3 M3); the diagnostic B1 of both hybrids",
+   "used_by": [
+    "b1",
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/table-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/table-v1/training_summary.json",
+   "frozen_sha256": "sha256:a32df92720ad796654a8eb976c9b316dd758e7cc969285d62137d264b3566c37",
+   "note": "",
+   "source_sha256": "sha256:a32df92720ad796654a8eb976c9b316dd758e7cc969285d62137d264b3566c37",
+   "exported_sha256": "sha256:a32df92720ad796654a8eb976c9b316dd758e7cc969285d62137d264b3566c37",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:e2a4ec4a066d02d5033ff76a2cd442a574aad646f85b08c1620986d74f5e95e7",
+   "note": "",
+   "source_sha256": "sha256:e2a4ec4a066d02d5033ff76a2cd442a574aad646f85b08c1620986d74f5e95e7",
+   "exported_sha256": "sha256:e2a4ec4a066d02d5033ff76a2cd442a574aad646f85b08c1620986d74f5e95e7",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/logistic-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/logistic-v1/model.json",
+   "frozen_sha256": "sha256:a313021a7b4428d01c3d7e64c54ce73dd50d75b4700b75ef6f5391d5785191a2",
+   "note": "",
+   "source_sha256": "sha256:a313021a7b4428d01c3d7e64c54ce73dd50d75b4700b75ef6f5391d5785191a2",
+   "exported_sha256": "sha256:a313021a7b4428d01c3d7e64c54ce73dd50d75b4700b75ef6f5391d5785191a2",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:1ebe5f5130b4ac2f2cf7a518deebbc2d2f75d3a1c8c8206cfd9f456d149b0b5d",
+   "note": "",
+   "source_sha256": "sha256:1ebe5f5130b4ac2f2cf7a518deebbc2d2f75d3a1c8c8206cfd9f456d149b0b5d",
+   "exported_sha256": "sha256:1ebe5f5130b4ac2f2cf7a518deebbc2d2f75d3a1c8c8206cfd9f456d149b0b5d",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:ba796eeb297d288014563a1369b56b52106cbb2b6ac15f70c008030e1f2e2e3d",
+   "note": "",
+   "source_sha256": "sha256:ba796eeb297d288014563a1369b56b52106cbb2b6ac15f70c008030e1f2e2e3d",
+   "exported_sha256": "sha256:ba796eeb297d288014563a1369b56b52106cbb2b6ac15f70c008030e1f2e2e3d",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/logistic-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/logistic-v1/model.json",
+   "frozen_sha256": "sha256:cf70e088888a9f45717e1551c8628f67ddeaf7562e4a977d0b6ecb4f68e9a39d",
+   "note": "",
+   "source_sha256": "sha256:cf70e088888a9f45717e1551c8628f67ddeaf7562e4a977d0b6ecb4f68e9a39d",
+   "exported_sha256": "sha256:cf70e088888a9f45717e1551c8628f67ddeaf7562e4a977d0b6ecb4f68e9a39d",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:45bf240ce57b55bd1e7ea378c0421c3879606394c9ef9d10fcea431e3af80529",
+   "note": "",
+   "source_sha256": "sha256:45bf240ce57b55bd1e7ea378c0421c3879606394c9ef9d10fcea431e3af80529",
+   "exported_sha256": "sha256:45bf240ce57b55bd1e7ea378c0421c3879606394c9ef9d10fcea431e3af80529",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:b9d21ba249baa4e549d8ec8a783d6be4656549f5bda13e6419b5855c4dc3e375",
+   "note": "",
+   "source_sha256": "sha256:b9d21ba249baa4e549d8ec8a783d6be4656549f5bda13e6419b5855c4dc3e375",
+   "exported_sha256": "sha256:b9d21ba249baa4e549d8ec8a783d6be4656549f5bda13e6419b5855c4dc3e375",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/logistic-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/logistic-v1/model.json",
+   "frozen_sha256": "sha256:6b64a9ff18f19bc0293795471027507db27fb90f0f1806f788b38bfa5c0d5a38",
+   "note": "",
+   "source_sha256": "sha256:6b64a9ff18f19bc0293795471027507db27fb90f0f1806f788b38bfa5c0d5a38",
+   "exported_sha256": "sha256:6b64a9ff18f19bc0293795471027507db27fb90f0f1806f788b38bfa5c0d5a38",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:e92eba65bef2d13434d70e5ea8fe93d610cc9f6d675b1f1b57cef1d928028d37",
+   "note": "",
+   "source_sha256": "sha256:e92eba65bef2d13434d70e5ea8fe93d610cc9f6d675b1f1b57cef1d928028d37",
+   "exported_sha256": "sha256:e92eba65bef2d13434d70e5ea8fe93d610cc9f6d675b1f1b57cef1d928028d37",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:c76af40e3620bcd6256cf395e9ded12194f47bc17b2230c415d6788eacec22fe",
+   "note": "",
+   "source_sha256": "sha256:c76af40e3620bcd6256cf395e9ded12194f47bc17b2230c415d6788eacec22fe",
+   "exported_sha256": "sha256:c76af40e3620bcd6256cf395e9ded12194f47bc17b2230c415d6788eacec22fe",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/logistic-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/logistic-v1/model.json",
+   "frozen_sha256": "sha256:4219182fec12fbcce62e3f77602def2dda51fa8ee75b43687549d07163cc74f7",
+   "note": "",
+   "source_sha256": "sha256:4219182fec12fbcce62e3f77602def2dda51fa8ee75b43687549d07163cc74f7",
+   "exported_sha256": "sha256:4219182fec12fbcce62e3f77602def2dda51fa8ee75b43687549d07163cc74f7",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:d2d2279ad9827e43fac9e2dbf130e17610904c211d56ee5f6e8b60a15ca529af",
+   "note": "",
+   "source_sha256": "sha256:d2d2279ad9827e43fac9e2dbf130e17610904c211d56ee5f6e8b60a15ca529af",
+   "exported_sha256": "sha256:d2d2279ad9827e43fac9e2dbf130e17610904c211d56ee5f6e8b60a15ca529af",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:3cbd42b093007faca2579b3d3b36a8e268c2acbde107c73ea464c8045daeac4b",
+   "note": "",
+   "source_sha256": "sha256:3cbd42b093007faca2579b3d3b36a8e268c2acbde107c73ea464c8045daeac4b",
+   "exported_sha256": "sha256:3cbd42b093007faca2579b3d3b36a8e268c2acbde107c73ea464c8045daeac4b",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/logistic-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/logistic-v1/model.json",
+   "frozen_sha256": "sha256:aa96f9dfbd25ea06c624714d18454536ee1dede6f4e97bdb66f44110cc711f89",
+   "note": "",
+   "source_sha256": "sha256:aa96f9dfbd25ea06c624714d18454536ee1dede6f4e97bdb66f44110cc711f89",
+   "exported_sha256": "sha256:aa96f9dfbd25ea06c624714d18454536ee1dede6f4e97bdb66f44110cc711f89",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:f577be5d98a312f0aca9ae353b2ddab0482cce74fdddd4c966f8da87461e9daf",
+   "note": "",
+   "source_sha256": "sha256:f577be5d98a312f0aca9ae353b2ddab0482cce74fdddd4c966f8da87461e9daf",
+   "exported_sha256": "sha256:f577be5d98a312f0aca9ae353b2ddab0482cce74fdddd4c966f8da87461e9daf",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:66564e6f2bf47ec8c4f266c7c58a8b5a4eedb0f57460bf6029dbbc331d471691",
+   "note": "",
+   "source_sha256": "sha256:66564e6f2bf47ec8c4f266c7c58a8b5a4eedb0f57460bf6029dbbc331d471691",
+   "exported_sha256": "sha256:66564e6f2bf47ec8c4f266c7c58a8b5a4eedb0f57460bf6029dbbc331d471691",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/logistic-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/logistic-v1/model.json",
+   "frozen_sha256": "sha256:f49554a4801e76196f5efa943c9fe91b273f52f4c1c04a0c9d41be40de872ac2",
+   "note": "",
+   "source_sha256": "sha256:f49554a4801e76196f5efa943c9fe91b273f52f4c1c04a0c9d41be40de872ac2",
+   "exported_sha256": "sha256:f49554a4801e76196f5efa943c9fe91b273f52f4c1c04a0c9d41be40de872ac2",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:b24b5d10839bdc64be579a670362dbba5dd43e529c530d115d8e0bea9be20b52",
+   "note": "",
+   "source_sha256": "sha256:b24b5d10839bdc64be579a670362dbba5dd43e529c530d115d8e0bea9be20b52",
+   "exported_sha256": "sha256:b24b5d10839bdc64be579a670362dbba5dd43e529c530d115d8e0bea9be20b52",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:1270bb78cd907dc469967fda83f0c74168a7a05c190b97b0aa143c86159404b1",
+   "note": "",
+   "source_sha256": "sha256:1270bb78cd907dc469967fda83f0c74168a7a05c190b97b0aa143c86159404b1",
+   "exported_sha256": "sha256:1270bb78cd907dc469967fda83f0c74168a7a05c190b97b0aa143c86159404b1",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/logistic-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/logistic-v1/model.json",
+   "frozen_sha256": "sha256:21f3f949ca9030943f638dc6120177f33c80ce6eb137b971568c719c15683865",
+   "note": "",
+   "source_sha256": "sha256:21f3f949ca9030943f638dc6120177f33c80ce6eb137b971568c719c15683865",
+   "exported_sha256": "sha256:21f3f949ca9030943f638dc6120177f33c80ce6eb137b971568c719c15683865",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:172b02d1435a082735f9081e82ead23ba65236aee9faa41f57f373341b0bef04",
+   "note": "",
+   "source_sha256": "sha256:172b02d1435a082735f9081e82ead23ba65236aee9faa41f57f373341b0bef04",
+   "exported_sha256": "sha256:172b02d1435a082735f9081e82ead23ba65236aee9faa41f57f373341b0bef04",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "note": "",
+   "source_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "exported_sha256": "sha256:0a94986aed18658a1ecb2f940f92c263a2b563f8829adaed4094d785a2cd8775",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:2bc1f918ead035e37eef90b5595794219a555d629b2d10b45888fec0971e61f9",
+   "note": "",
+   "source_sha256": "sha256:2bc1f918ead035e37eef90b5595794219a555d629b2d10b45888fec0971e61f9",
+   "exported_sha256": "sha256:2bc1f918ead035e37eef90b5595794219a555d629b2d10b45888fec0971e61f9",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/logistic-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/logistic-v1/model.json",
+   "frozen_sha256": "sha256:4e2e74a844c728ccf65e82eee7bee9ba2cfa3da2459640e6930bbc51d45f00ee",
+   "note": "",
+   "source_sha256": "sha256:4e2e74a844c728ccf65e82eee7bee9ba2cfa3da2459640e6930bbc51d45f00ee",
+   "exported_sha256": "sha256:4e2e74a844c728ccf65e82eee7bee9ba2cfa3da2459640e6930bbc51d45f00ee",
+   "verified": true
+  },
+  {
+   "id": "B2-v1",
+   "version": "logistic-v1",
+   "status": "CONFIRMED SURROGATE COMPONENT OF HYBRID-V1 (not adequate on its own in closed loop)",
+   "used_by": [
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:8b73ee46218d1ad3e1714de44d1b6a4daf80e31d46a09537790408da69f4be2a",
+   "note": "",
+   "source_sha256": "sha256:8b73ee46218d1ad3e1714de44d1b6a4daf80e31d46a09537790408da69f4be2a",
+   "exported_sha256": "sha256:8b73ee46218d1ad3e1714de44d1b6a4daf80e31d46a09537790408da69f4be2a",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/target-v2.1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/target-v2.1/metadata.json",
+   "frozen_sha256": "sha256:4f19717f8e180fa78230faf50add90ef604bf32898ab4098cb97113dc8dcc253",
+   "note": "",
+   "source_sha256": "sha256:4f19717f8e180fa78230faf50add90ef604bf32898ab4098cb97113dc8dcc253",
+   "exported_sha256": "sha256:4f19717f8e180fa78230faf50add90ef604bf32898ab4098cb97113dc8dcc253",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/target-v2.1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/target-v2.1/model.json",
+   "frozen_sha256": "sha256:a8483d91b66109db4e210fdef5bb32b3eeaa6672f105c862171222b15f9767b8",
+   "note": "",
+   "source_sha256": "sha256:a8483d91b66109db4e210fdef5bb32b3eeaa6672f105c862171222b15f9767b8",
+   "exported_sha256": "sha256:a8483d91b66109db4e210fdef5bb32b3eeaa6672f105c862171222b15f9767b8",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/target-v2.1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/target-v2.1/metadata.json",
+   "frozen_sha256": "sha256:20536b0d4dc86c6c4852ba367067593ec875aadc33c5ecdd2826a2823fe6e75e",
+   "note": "",
+   "source_sha256": "sha256:20536b0d4dc86c6c4852ba367067593ec875aadc33c5ecdd2826a2823fe6e75e",
+   "exported_sha256": "sha256:20536b0d4dc86c6c4852ba367067593ec875aadc33c5ecdd2826a2823fe6e75e",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/target-v2.1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/target-v2.1/model.json",
+   "frozen_sha256": "sha256:816e150ca594c25603ced79589846a2240d6c0d4c1656c118899e71691b11722",
+   "note": "",
+   "source_sha256": "sha256:816e150ca594c25603ced79589846a2240d6c0d4c1656c118899e71691b11722",
+   "exported_sha256": "sha256:816e150ca594c25603ced79589846a2240d6c0d4c1656c118899e71691b11722",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/target-v2.1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/target-v2.1/metadata.json",
+   "frozen_sha256": "sha256:31558bfb3dcd9b6d115702c147d999f5bd096e8bf19f7b9caabfc2b3f6ddd329",
+   "note": "",
+   "source_sha256": "sha256:31558bfb3dcd9b6d115702c147d999f5bd096e8bf19f7b9caabfc2b3f6ddd329",
+   "exported_sha256": "sha256:31558bfb3dcd9b6d115702c147d999f5bd096e8bf19f7b9caabfc2b3f6ddd329",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/target-v2.1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/target-v2.1/model.json",
+   "frozen_sha256": "sha256:e28130516539f2067d893152f01eed05724a7bca7d432659ca5e662c5a45e86f",
+   "note": "",
+   "source_sha256": "sha256:e28130516539f2067d893152f01eed05724a7bca7d432659ca5e662c5a45e86f",
+   "exported_sha256": "sha256:e28130516539f2067d893152f01eed05724a7bca7d432659ca5e662c5a45e86f",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/target-v2.1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/target-v2.1/metadata.json",
+   "frozen_sha256": "sha256:ba9515613fda9840bad455de71cab8a5a507069272b40bb476dbb3e904a6ac00",
+   "note": "",
+   "source_sha256": "sha256:ba9515613fda9840bad455de71cab8a5a507069272b40bb476dbb3e904a6ac00",
+   "exported_sha256": "sha256:ba9515613fda9840bad455de71cab8a5a507069272b40bb476dbb3e904a6ac00",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/target-v2.1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/target-v2.1/model.json",
+   "frozen_sha256": "sha256:ee245b50ebdc732bd57cabf1d63edfceeb239fc212b865fcdcfc4413601fc888",
+   "note": "",
+   "source_sha256": "sha256:ee245b50ebdc732bd57cabf1d63edfceeb239fc212b865fcdcfc4413601fc888",
+   "exported_sha256": "sha256:ee245b50ebdc732bd57cabf1d63edfceeb239fc212b865fcdcfc4413601fc888",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/target-v2.1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/target-v2.1/metadata.json",
+   "frozen_sha256": "sha256:f44eca49dfa91ded7a82b2e713501136ebc97998d1528da212812b28245413f4",
+   "note": "",
+   "source_sha256": "sha256:f44eca49dfa91ded7a82b2e713501136ebc97998d1528da212812b28245413f4",
+   "exported_sha256": "sha256:f44eca49dfa91ded7a82b2e713501136ebc97998d1528da212812b28245413f4",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/target-v2.1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/target-v2.1/model.json",
+   "frozen_sha256": "sha256:6c70daae3b4eb64fd5102c1e91cb62c36dcb5ee290e5872df87d58cf7cfb7843",
+   "note": "",
+   "source_sha256": "sha256:6c70daae3b4eb64fd5102c1e91cb62c36dcb5ee290e5872df87d58cf7cfb7843",
+   "exported_sha256": "sha256:6c70daae3b4eb64fd5102c1e91cb62c36dcb5ee290e5872df87d58cf7cfb7843",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/target-v2.1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/target-v2.1/metadata.json",
+   "frozen_sha256": "sha256:17c13e84dc6d90d633fe5705a568b3eaa97332ad62eb889ad82ba907f20ed0d4",
+   "note": "",
+   "source_sha256": "sha256:17c13e84dc6d90d633fe5705a568b3eaa97332ad62eb889ad82ba907f20ed0d4",
+   "exported_sha256": "sha256:17c13e84dc6d90d633fe5705a568b3eaa97332ad62eb889ad82ba907f20ed0d4",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/target-v2.1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/target-v2.1/model.json",
+   "frozen_sha256": "sha256:5fd76d1cc0c17a4b37aa45b6196a82d91729c9892888547c5ce3477c643ede94",
+   "note": "",
+   "source_sha256": "sha256:5fd76d1cc0c17a4b37aa45b6196a82d91729c9892888547c5ce3477c643ede94",
+   "exported_sha256": "sha256:5fd76d1cc0c17a4b37aa45b6196a82d91729c9892888547c5ce3477c643ede94",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/target-v2.1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/target-v2.1/metadata.json",
+   "frozen_sha256": "sha256:8e31c6364abb04df83b3c711e9faf35d079466778da79af2ffaa291d69b36619",
+   "note": "",
+   "source_sha256": "sha256:8e31c6364abb04df83b3c711e9faf35d079466778da79af2ffaa291d69b36619",
+   "exported_sha256": "sha256:8e31c6364abb04df83b3c711e9faf35d079466778da79af2ffaa291d69b36619",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/target-v2.1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/target-v2.1/model.json",
+   "frozen_sha256": "sha256:c0500cb745491d4cf7983c9e32ca80065996503bc47d655c8989e3bcedd487f5",
+   "note": "",
+   "source_sha256": "sha256:c0500cb745491d4cf7983c9e32ca80065996503bc47d655c8989e3bcedd487f5",
+   "exported_sha256": "sha256:c0500cb745491d4cf7983c9e32ca80065996503bc47d655c8989e3bcedd487f5",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/target-v2.1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/target-v2.1/metadata.json",
+   "frozen_sha256": "sha256:999d15bd62216369220cb20d940106885b204c578b992a613e2aab1e46335725",
+   "note": "",
+   "source_sha256": "sha256:999d15bd62216369220cb20d940106885b204c578b992a613e2aab1e46335725",
+   "exported_sha256": "sha256:999d15bd62216369220cb20d940106885b204c578b992a613e2aab1e46335725",
+   "verified": true
+  },
+  {
+   "id": "target-v2.1",
+   "version": "target-v2.1",
+   "status": "the MOVE-target policy of every frozen closed-loop surrogate",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/target-v2.1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/target-v2.1/model.json",
+   "frozen_sha256": "sha256:e657fa79aec85a43547cd5f5dbd3fa81263ceaa45162c5cde86cc27c96d3150c",
+   "note": "",
+   "source_sha256": "sha256:e657fa79aec85a43547cd5f5dbd3fa81263ceaa45162c5cde86cc27c96d3150c",
+   "exported_sha256": "sha256:e657fa79aec85a43547cd5f5dbd3fa81263ceaa45162c5cde86cc27c96d3150c",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/coverage-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/coverage-v1/metadata.json",
+   "frozen_sha256": "sha256:fea842b1431d12c862d13d164383d61c0adf7804db04deda513bae3cbd084668",
+   "note": "",
+   "source_sha256": "sha256:fea842b1431d12c862d13d164383d61c0adf7804db04deda513bae3cbd084668",
+   "exported_sha256": "sha256:fea842b1431d12c862d13d164383d61c0adf7804db04deda513bae3cbd084668",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/cautious/coverage-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/cautious/coverage-v1/model.json",
+   "frozen_sha256": "sha256:22cd0b066daea719e45a17171938eb00754611f1a38a836bc6d3115e29e5ddcd",
+   "note": "",
+   "source_sha256": "sha256:22cd0b066daea719e45a17171938eb00754611f1a38a836bc6d3115e29e5ddcd",
+   "exported_sha256": "sha256:22cd0b066daea719e45a17171938eb00754611f1a38a836bc6d3115e29e5ddcd",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/coverage-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/coverage-v1/metadata.json",
+   "frozen_sha256": "sha256:a47551f690fd71b0023d2f8d48ce581c4d024500cd6f8ac5d21f24c1b21eb3db",
+   "note": "",
+   "source_sha256": "sha256:a47551f690fd71b0023d2f8d48ce581c4d024500cd6f8ac5d21f24c1b21eb3db",
+   "exported_sha256": "sha256:a47551f690fd71b0023d2f8d48ce581c4d024500cd6f8ac5d21f24c1b21eb3db",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/coverage-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/opportunist/coverage-v1/model.json",
+   "frozen_sha256": "sha256:dcd96ea97de456015bed1e9b7b6e8b51c70658584b4ed28c9decb43df2ad50d2",
+   "note": "",
+   "source_sha256": "sha256:dcd96ea97de456015bed1e9b7b6e8b51c70658584b4ed28c9decb43df2ad50d2",
+   "exported_sha256": "sha256:dcd96ea97de456015bed1e9b7b6e8b51c70658584b4ed28c9decb43df2ad50d2",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/coverage-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/coverage-v1/metadata.json",
+   "frozen_sha256": "sha256:4b74367abb3bc86b2f07d015bd40b8857023c5a658379c6870b0de6b9746f03a",
+   "note": "",
+   "source_sha256": "sha256:4b74367abb3bc86b2f07d015bd40b8857023c5a658379c6870b0de6b9746f03a",
+   "exported_sha256": "sha256:4b74367abb3bc86b2f07d015bd40b8857023c5a658379c6870b0de6b9746f03a",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/racer/coverage-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/racer/coverage-v1/model.json",
+   "frozen_sha256": "sha256:6c539452db04a4bb9d956f1a72795c4605f0619824edd74a6a71289e7b9f3b1c",
+   "note": "",
+   "source_sha256": "sha256:6c539452db04a4bb9d956f1a72795c4605f0619824edd74a6a71289e7b9f3b1c",
+   "exported_sha256": "sha256:6c539452db04a4bb9d956f1a72795c4605f0619824edd74a6a71289e7b9f3b1c",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/coverage-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/coverage-v1/metadata.json",
+   "frozen_sha256": "sha256:dab909452c6deda354538cd98f844c05f1ee3172421bae44b8117ce7833598be",
+   "note": "",
+   "source_sha256": "sha256:dab909452c6deda354538cd98f844c05f1ee3172421bae44b8117ce7833598be",
+   "exported_sha256": "sha256:dab909452c6deda354538cd98f844c05f1ee3172421bae44b8117ce7833598be",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/coverage-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/sonnet55/saboteur/coverage-v1/model.json",
+   "frozen_sha256": "sha256:a00bc099fcf98f2198311d85ba174616b2ca4e7ba96e50c0a1e8915c7c4a6632",
+   "note": "",
+   "source_sha256": "sha256:a00bc099fcf98f2198311d85ba174616b2ca4e7ba96e50c0a1e8915c7c4a6632",
+   "exported_sha256": "sha256:a00bc099fcf98f2198311d85ba174616b2ca4e7ba96e50c0a1e8915c7c4a6632",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/coverage-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/coverage-v1/metadata.json",
+   "frozen_sha256": "sha256:c936c50d30b34c8e09416e7408d53d3f2c0a237b56c6bef904dd890955f0752c",
+   "note": "",
+   "source_sha256": "sha256:c936c50d30b34c8e09416e7408d53d3f2c0a237b56c6bef904dd890955f0752c",
+   "exported_sha256": "sha256:c936c50d30b34c8e09416e7408d53d3f2c0a237b56c6bef904dd890955f0752c",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/coverage-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/cautious/coverage-v1/model.json",
+   "frozen_sha256": "sha256:e1778a8877eabf379a0489b0e647952d99617ad66a05bd2c0b08724af6ba3e50",
+   "note": "",
+   "source_sha256": "sha256:e1778a8877eabf379a0489b0e647952d99617ad66a05bd2c0b08724af6ba3e50",
+   "exported_sha256": "sha256:e1778a8877eabf379a0489b0e647952d99617ad66a05bd2c0b08724af6ba3e50",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/coverage-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/coverage-v1/metadata.json",
+   "frozen_sha256": "sha256:423aa5463033fab22c814b4ac0957ec172cc70e7d1f838aa0a312cc4effd5411",
+   "note": "",
+   "source_sha256": "sha256:423aa5463033fab22c814b4ac0957ec172cc70e7d1f838aa0a312cc4effd5411",
+   "exported_sha256": "sha256:423aa5463033fab22c814b4ac0957ec172cc70e7d1f838aa0a312cc4effd5411",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/coverage-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/opportunist/coverage-v1/model.json",
+   "frozen_sha256": "sha256:86c126a5c13577f344c717e712a646dfed71eb687af3f398ba6057162a470f69",
+   "note": "",
+   "source_sha256": "sha256:86c126a5c13577f344c717e712a646dfed71eb687af3f398ba6057162a470f69",
+   "exported_sha256": "sha256:86c126a5c13577f344c717e712a646dfed71eb687af3f398ba6057162a470f69",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/coverage-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/coverage-v1/metadata.json",
+   "frozen_sha256": "sha256:59a8d132901e69d4d89ffc79657e6f95ca8c04a9be30d7106aa67578353836c5",
+   "note": "",
+   "source_sha256": "sha256:59a8d132901e69d4d89ffc79657e6f95ca8c04a9be30d7106aa67578353836c5",
+   "exported_sha256": "sha256:59a8d132901e69d4d89ffc79657e6f95ca8c04a9be30d7106aa67578353836c5",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/racer/coverage-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/racer/coverage-v1/model.json",
+   "frozen_sha256": "sha256:f56f4efeb538b5a4de536c3e70cb55f2f1a3231e4f268062d106f1b47e7c1fa4",
+   "note": "",
+   "source_sha256": "sha256:f56f4efeb538b5a4de536c3e70cb55f2f1a3231e4f268062d106f1b47e7c1fa4",
+   "exported_sha256": "sha256:f56f4efeb538b5a4de536c3e70cb55f2f1a3231e4f268062d106f1b47e7c1fa4",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/coverage-v1/metadata.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/coverage-v1/metadata.json",
+   "frozen_sha256": "sha256:0acc4594e2fde58e281c80dbd9d60c617b92fdbf7d4750450316a227558c2ec5",
+   "note": "",
+   "source_sha256": "sha256:0acc4594e2fde58e281c80dbd9d60c617b92fdbf7d4750450316a227558c2ec5",
+   "exported_sha256": "sha256:0acc4594e2fde58e281c80dbd9d60c617b92fdbf7d4750450316a227558c2ec5",
+   "verified": true
+  },
+  {
+   "id": "coverage-v1",
+   "version": "coverage-v1",
+   "status": "the coverage labels (LOW / OOD) read by the surrogates and the router",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3",
+   "source_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/coverage-v1/model.json",
+   "public_path": "workshop/policies/phase-a-v2/gpt61sol/saboteur/coverage-v1/model.json",
+   "frozen_sha256": "sha256:5ede85cd746c06e2bbbd31b69dba403a2a820022bc47e51a8e6ce1c1d0ee8ce3",
+   "note": "",
+   "source_sha256": "sha256:5ede85cd746c06e2bbbd31b69dba403a2a820022bc47e51a8e6ce1c1d0ee8ce3",
+   "exported_sha256": "sha256:5ede85cd746c06e2bbbd31b69dba403a2a820022bc47e51a8e6ce1c1d0ee8ce3",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/cautious/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/cautious/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "note": "",
+   "source_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "exported_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/cautious/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/cautious/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:6aee242f6a88c3d4b188ae93f55b40c936e8d6ec11d8f018bb92bc275ca43f65",
+   "note": "",
+   "source_sha256": "sha256:6aee242f6a88c3d4b188ae93f55b40c936e8d6ec11d8f018bb92bc275ca43f65",
+   "exported_sha256": "sha256:6aee242f6a88c3d4b188ae93f55b40c936e8d6ec11d8f018bb92bc275ca43f65",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/cautious/logistic-v1/model.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/cautious/logistic-v1/model.json",
+   "frozen_sha256": "sha256:b8dd21d494fbef167a49a6f64279d98188c7e10612ecb9c1b7f8eec134dec773",
+   "note": "",
+   "source_sha256": "sha256:b8dd21d494fbef167a49a6f64279d98188c7e10612ecb9c1b7f8eec134dec773",
+   "exported_sha256": "sha256:b8dd21d494fbef167a49a6f64279d98188c7e10612ecb9c1b7f8eec134dec773",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/cautious/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/cautious/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:759fc14fdc461d1c2773360276d0ce5118e411f464d6019d9f9ee4e61aa2e23b",
+   "note": "",
+   "source_sha256": "sha256:759fc14fdc461d1c2773360276d0ce5118e411f464d6019d9f9ee4e61aa2e23b",
+   "exported_sha256": "sha256:759fc14fdc461d1c2773360276d0ce5118e411f464d6019d9f9ee4e61aa2e23b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/opportunist/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/opportunist/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "note": "",
+   "source_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "exported_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/opportunist/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/opportunist/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:0202fd030e03226db41c621b0630366cae469a64259a57263cda70af066997ad",
+   "note": "",
+   "source_sha256": "sha256:0202fd030e03226db41c621b0630366cae469a64259a57263cda70af066997ad",
+   "exported_sha256": "sha256:0202fd030e03226db41c621b0630366cae469a64259a57263cda70af066997ad",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/opportunist/logistic-v1/model.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/opportunist/logistic-v1/model.json",
+   "frozen_sha256": "sha256:cf25947927a798dcc49e737037923b1fc82a11888adffc8f3c25df97ccef76c3",
+   "note": "",
+   "source_sha256": "sha256:cf25947927a798dcc49e737037923b1fc82a11888adffc8f3c25df97ccef76c3",
+   "exported_sha256": "sha256:cf25947927a798dcc49e737037923b1fc82a11888adffc8f3c25df97ccef76c3",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/opportunist/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/opportunist/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:77209d66eaf2029074eea9d6d75f6fdc1e918e715e8bd0cecc2d35b0b64e2dc9",
+   "note": "",
+   "source_sha256": "sha256:77209d66eaf2029074eea9d6d75f6fdc1e918e715e8bd0cecc2d35b0b64e2dc9",
+   "exported_sha256": "sha256:77209d66eaf2029074eea9d6d75f6fdc1e918e715e8bd0cecc2d35b0b64e2dc9",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/racer/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/racer/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "note": "",
+   "source_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "exported_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/racer/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/racer/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:c15941cb4a41fc034c606e5a65a5a40591b3f4b91c2d194626b1a0f6b89e21b7",
+   "note": "",
+   "source_sha256": "sha256:c15941cb4a41fc034c606e5a65a5a40591b3f4b91c2d194626b1a0f6b89e21b7",
+   "exported_sha256": "sha256:c15941cb4a41fc034c606e5a65a5a40591b3f4b91c2d194626b1a0f6b89e21b7",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/racer/logistic-v1/model.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/racer/logistic-v1/model.json",
+   "frozen_sha256": "sha256:07afd95066b022a177eaac4ff5643e35f38926111fc658de6a850968d78a478b",
+   "note": "",
+   "source_sha256": "sha256:07afd95066b022a177eaac4ff5643e35f38926111fc658de6a850968d78a478b",
+   "exported_sha256": "sha256:07afd95066b022a177eaac4ff5643e35f38926111fc658de6a850968d78a478b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/racer/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/racer/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:74f91937d75199e869766432c0aadecbe89caff29bee7451fef790f748ee7f44",
+   "note": "",
+   "source_sha256": "sha256:74f91937d75199e869766432c0aadecbe89caff29bee7451fef790f748ee7f44",
+   "exported_sha256": "sha256:74f91937d75199e869766432c0aadecbe89caff29bee7451fef790f748ee7f44",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/saboteur/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/saboteur/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "note": "",
+   "source_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "exported_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/saboteur/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/saboteur/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:a9ad2617787f0a88362d55d6cf4ae0f4c0d7db1c3287d81ca80de568f2a36f5c",
+   "note": "",
+   "source_sha256": "sha256:a9ad2617787f0a88362d55d6cf4ae0f4c0d7db1c3287d81ca80de568f2a36f5c",
+   "exported_sha256": "sha256:a9ad2617787f0a88362d55d6cf4ae0f4c0d7db1c3287d81ca80de568f2a36f5c",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/saboteur/logistic-v1/model.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/saboteur/logistic-v1/model.json",
+   "frozen_sha256": "sha256:edf8cfddd12003e3dc971b7f5fe7f4a26f1bbf546cb1e1da341441e58bde64af",
+   "note": "",
+   "source_sha256": "sha256:edf8cfddd12003e3dc971b7f5fe7f4a26f1bbf546cb1e1da341441e58bde64af",
+   "exported_sha256": "sha256:edf8cfddd12003e3dc971b7f5fe7f4a26f1bbf546cb1e1da341441e58bde64af",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/saboteur/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/sonnet55/saboteur/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:a1b54bfcb12b8630a40a8fd5ad24aab990072331373a161d44183d42319b7f27",
+   "note": "",
+   "source_sha256": "sha256:a1b54bfcb12b8630a40a8fd5ad24aab990072331373a161d44183d42319b7f27",
+   "exported_sha256": "sha256:a1b54bfcb12b8630a40a8fd5ad24aab990072331373a161d44183d42319b7f27",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/cautious/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/cautious/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "note": "",
+   "source_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "exported_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/cautious/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/cautious/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:9734b0e516e826da758e61a6fc164f4c8d104321f0000082f357f46aa560f660",
+   "note": "",
+   "source_sha256": "sha256:9734b0e516e826da758e61a6fc164f4c8d104321f0000082f357f46aa560f660",
+   "exported_sha256": "sha256:9734b0e516e826da758e61a6fc164f4c8d104321f0000082f357f46aa560f660",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/cautious/logistic-v1/model.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/cautious/logistic-v1/model.json",
+   "frozen_sha256": "sha256:d4632248067096cfa53ad3e9aeb4015b9b5e844920d8b07baeedf40e7f09001b",
+   "note": "",
+   "source_sha256": "sha256:d4632248067096cfa53ad3e9aeb4015b9b5e844920d8b07baeedf40e7f09001b",
+   "exported_sha256": "sha256:d4632248067096cfa53ad3e9aeb4015b9b5e844920d8b07baeedf40e7f09001b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/cautious/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/cautious/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:111f4c15cff2b62f32411a3911018cd7aebe1e580be5b5a6443e778e6bf25696",
+   "note": "",
+   "source_sha256": "sha256:111f4c15cff2b62f32411a3911018cd7aebe1e580be5b5a6443e778e6bf25696",
+   "exported_sha256": "sha256:111f4c15cff2b62f32411a3911018cd7aebe1e580be5b5a6443e778e6bf25696",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/opportunist/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/opportunist/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "note": "",
+   "source_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "exported_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/opportunist/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/opportunist/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:07b905b5e9f4aab0cc6b2771f30d0390170a22779a7b93a1ee827db98bb84dc6",
+   "note": "",
+   "source_sha256": "sha256:07b905b5e9f4aab0cc6b2771f30d0390170a22779a7b93a1ee827db98bb84dc6",
+   "exported_sha256": "sha256:07b905b5e9f4aab0cc6b2771f30d0390170a22779a7b93a1ee827db98bb84dc6",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/opportunist/logistic-v1/model.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/opportunist/logistic-v1/model.json",
+   "frozen_sha256": "sha256:983132d47e2041859867ebface7c6756167aff0d92073bedfb8fd3f29134be29",
+   "note": "",
+   "source_sha256": "sha256:983132d47e2041859867ebface7c6756167aff0d92073bedfb8fd3f29134be29",
+   "exported_sha256": "sha256:983132d47e2041859867ebface7c6756167aff0d92073bedfb8fd3f29134be29",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/opportunist/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/opportunist/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:e47973aa21540e77bad748b6190d71587deadd302200fa13a6e4b55ba3351f90",
+   "note": "",
+   "source_sha256": "sha256:e47973aa21540e77bad748b6190d71587deadd302200fa13a6e4b55ba3351f90",
+   "exported_sha256": "sha256:e47973aa21540e77bad748b6190d71587deadd302200fa13a6e4b55ba3351f90",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/racer/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/racer/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "note": "",
+   "source_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "exported_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/racer/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/racer/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:fc2b3257721c124a564f519865a0ba54bb321bce73945f42bae930dc0553330b",
+   "note": "",
+   "source_sha256": "sha256:fc2b3257721c124a564f519865a0ba54bb321bce73945f42bae930dc0553330b",
+   "exported_sha256": "sha256:fc2b3257721c124a564f519865a0ba54bb321bce73945f42bae930dc0553330b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/racer/logistic-v1/model.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/racer/logistic-v1/model.json",
+   "frozen_sha256": "sha256:b124353f823023055d8de79571f1035d097398a8d051a5619d43a3c05d10e85a",
+   "note": "",
+   "source_sha256": "sha256:b124353f823023055d8de79571f1035d097398a8d051a5619d43a3c05d10e85a",
+   "exported_sha256": "sha256:b124353f823023055d8de79571f1035d097398a8d051a5619d43a3c05d10e85a",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/racer/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/racer/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:d9e418efbede9432d737b8af104ac5b8b58c04d43d80c8f5c61b25fdd3c54f9c",
+   "note": "",
+   "source_sha256": "sha256:d9e418efbede9432d737b8af104ac5b8b58c04d43d80c8f5c61b25fdd3c54f9c",
+   "exported_sha256": "sha256:d9e418efbede9432d737b8af104ac5b8b58c04d43d80c8f5c61b25fdd3c54f9c",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/saboteur/logistic-v1/feature_schema.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/saboteur/logistic-v1/feature_schema.json",
+   "frozen_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "note": "",
+   "source_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "exported_sha256": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/saboteur/logistic-v1/metadata.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/saboteur/logistic-v1/metadata.json",
+   "frozen_sha256": "sha256:2d446510fe30a981301d9e265ec0f39a02587164bdf76ed1ce4c6216299e26c8",
+   "note": "",
+   "source_sha256": "sha256:2d446510fe30a981301d9e265ec0f39a02587164bdf76ed1ce4c6216299e26c8",
+   "exported_sha256": "sha256:2d446510fe30a981301d9e265ec0f39a02587164bdf76ed1ce4c6216299e26c8",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/saboteur/logistic-v1/model.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/saboteur/logistic-v1/model.json",
+   "frozen_sha256": "sha256:c4be01d98fc73fa22a90dcc7a94a9ee8c69243a827ec5f299365493f3b2535c0",
+   "note": "",
+   "source_sha256": "sha256:c4be01d98fc73fa22a90dcc7a94a9ee8c69243a827ec5f299365493f3b2535c0",
+   "exported_sha256": "sha256:c4be01d98fc73fa22a90dcc7a94a9ee8c69243a827ec5f299365493f3b2535c0",
+   "verified": true
+  },
+  {
+   "id": "B2-v2",
+   "version": "candidate C1 (manifest sha256:42e007a6a260fe5d)",
+   "status": "SELECTED CANDIDATE COMPONENT (Stage 5A decision A, Stage 5B decision A)",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "b2v2",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/saboteur/logistic-v1/training_summary.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/gpt61sol/saboteur/logistic-v1/training_summary.json",
+   "frozen_sha256": "sha256:96ef73c416615fb83628eb54623b19be98b773700f35cab937a7e61fd50492b9",
+   "note": "",
+   "source_sha256": "sha256:96ef73c416615fb83628eb54623b19be98b773700f35cab937a7e61fd50492b9",
+   "exported_sha256": "sha256:96ef73c416615fb83628eb54623b19be98b773700f35cab937a7e61fd50492b9",
+   "verified": true
+  },
+  {
+   "id": "B2-v2 candidate",
+   "version": "candidate C1",
+   "status": "the B2-v2 candidate definition and its freeze manifest",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "final1",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/candidate.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/candidate.json",
+   "frozen_sha256": "sha256:b9f60af4c5e0b666652668dc0d0a5814ee7f7c7cec67b03ed98b64972698e918",
+   "note": "",
+   "source_sha256": "sha256:b9f60af4c5e0b666652668dc0d0a5814ee7f7c7cec67b03ed98b64972698e918",
+   "exported_sha256": "sha256:b9f60af4c5e0b666652668dc0d0a5814ee7f7c7cec67b03ed98b64972698e918",
+   "verified": true
+  },
+  {
+   "id": "B2-v2 candidate",
+   "version": "candidate C1",
+   "status": "the B2-v2 candidate definition and its freeze manifest",
+   "used_by": [
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "final1",
+   "source_path": "workshop/policies/stage5/b2-v2-candidate/manifest.json",
+   "public_path": "workshop/policies/stage5/b2-v2-candidate/manifest.json",
+   "frozen_sha256": "sha256:bae1ef1cf63617e53c39a3ccf7fccd26b8f5ffcb85fad34bdc652c080f34a6e8",
+   "note": "",
+   "source_sha256": "sha256:bae1ef1cf63617e53c39a3ccf7fccd26b8f5ffcb85fad34bdc652c080f34a6e8",
+   "exported_sha256": "sha256:bae1ef1cf63617e53c39a3ccf7fccd26b8f5ffcb85fad34bdc652c080f34a6e8",
+   "verified": true
+  },
+  {
+   "id": "R2.1",
+   "version": "hybrid-router-v2 R2.1 (router hash sha256:216f3c9a3c4b3f78)",
+   "status": "the frozen router of Hybrid-v1 (CONFIRMED / GENERALIZED RESEARCH BASELINE) and Hybrid-v2 (MORE EFFICIENT BUT NOT SAFELY PROMOTABLE UNDER THE CONFIRMATORY RULE)",
+   "used_by": [
+    "hybrid_v1",
+    "hybrid_v2"
+   ],
+   "frozen_in": "final1",
+   "source_path": "workshop/policies/phase-a-v2/hybrid-router-v2/router.json",
+   "public_path": "workshop/policies/phase-a-v2/hybrid-router-v2/router.json",
+   "frozen_sha256": "sha256:c11c43d83d2d74e3f7cfba5d9ab08c31547bcc442e1014084a5c22db53f8f41f",
+   "note": "",
+   "source_sha256": "sha256:c11c43d83d2d74e3f7cfba5d9ab08c31547bcc442e1014084a5c22db53f8f41f",
+   "exported_sha256": "sha256:c11c43d83d2d74e3f7cfba5d9ab08c31547bcc442e1014084a5c22db53f8f41f",
+   "verified": true
+  },
+  {
+   "id": "Phase-A dataset provenance",
+   "version": "phase-a-v2 (dataset hash sha256:90a0f39349ab509a)",
+   "status": "the provenance record the loaders check every artifact's training dataset hash against (no data)",
+   "used_by": [
+    "b1",
+    "b2_v1",
+    "hybrid_v1",
+    "b2_v2",
+    "hybrid_v2"
+   ],
+   "frozen_in": "stage3-dataset",
+   "source_path": "workshop/policy_data/phase-a-v2/provenance.json",
+   "public_path": "workshop/policy_data/phase-a-v2/provenance.json",
+   "frozen_sha256": null,
+   "note": "no file hash is frozen; its dataset_hash equals the Stage-3 training dataset hash",
+   "source_sha256": "sha256:c264946cb7f2e364b95b3f09ae83c69ce9d13ad9cdb003a798fbe48fb77801c7",
+   "exported_sha256": "sha256:c264946cb7f2e364b95b3f09ae83c69ce9d13ad9cdb003a798fbe48fb77801c7",
+   "verified": true
+  },
+  {
+   "id": "FINAL-1 freeze manifest",
+   "version": "FINAL-1 (manifest hash sha256:e5943690ede2244c)",
+   "status": "the release identity recorded in every runtime manifest; it lists hashes of archive files not exported",
+   "used_by": [
+    "runtime manifest"
+   ],
+   "frozen_in": "final1-self",
+   "source_path": "workshop/policies/final-release/freeze_manifest.json",
+   "public_path": "workshop/policies/final-release/freeze_manifest.json",
+   "frozen_sha256": "sha256:0eceb995c42bb588cb49f7c8f9d94fc76b276325bdfe98d9e821cb5f0458c229",
+   "note": "the FINAL-1 release record (its file hash, as recorded at the freeze)",
+   "source_sha256": "sha256:0eceb995c42bb588cb49f7c8f9d94fc76b276325bdfe98d9e821cb5f0458c229",
+   "exported_sha256": "sha256:0eceb995c42bb588cb49f7c8f9d94fc76b276325bdfe98d9e821cb5f0458c229",
+   "verified": true
+  }
+ ],
+ "policy_composition": {
+  "scripted": "src/bot_controller.py (engine baseline, no artifact)",
+  "b1": "B1 + target-v2.1 + coverage-v1",
+  "b2_v1": "B2-v1 + target-v2.1 + coverage-v1",
+  "hybrid_v1": "B2-v1 + B1 (diagnostic) + R2.1 + the LLM delegate",
+  "b2_v2": "B2-v2 (cells of B2-v1 retrained with promoted hard examples) + target-v2.1 + coverage-v1",
+  "hybrid_v2": "B2-v2 + B1 (diagnostic) + R2.1 (B2-v2 bound) + the LLM delegate",
+  "real_llm": "src/llm_controller.py (no artifact)"
+ },
+ "lazy_research_imports": {
+  "spy_vs_ai/runtime/historical.py": [
+   "workshop.scripts.confirmatory_trial",
+   "workshop.scripts.hybrid_router_replay"
+  ],
+  "workshop/policy_emulator/closed_loop.py": [
+   "workshop.policy_emulator.closed_loop_stability"
+  ],
+  "workshop/policy_emulator/dataset.py": [
+   "workshop.scripts.behavior_grid",
+   "workshop.scripts.behavior_grid_snapshots"
+  ],
+  "workshop/policy_emulator/evaluation.py": [
+   "workshop.scripts.behavior_grid_snapshots"
+  ],
+  "workshop/policy_emulator/stage5a_promotion.py": [
+   "workshop.policy_emulator.stage3_release"
+  ],
+  "workshop/policy_emulator/stage5b_protocol.py": [
+   "workshop.policy_emulator.confirmatory",
+   "workshop.policy_emulator.fresh_seeds",
+   "workshop.policy_emulator.hybrid_pilot",
+   "workshop.policy_emulator.stage3_release",
+   "workshop.policy_emulator.stage4_analysis",
+   "workshop.policy_emulator.stage4_interface",
+   "workshop.policy_emulator.stage4_protocol",
+   "workshop.policy_emulator.stage4_release",
+   "workshop.policy_emulator.stage4c_protocol",
+   "workshop.policy_emulator.stage5b_analysis",
+   "workshop.policy_emulator.trajectory_v2_candidate",
+   "workshop.scripts.confirmatory_trial"
+  ]
+ },
+ "tests_archive_only": {
+  "tests/test_final2_runtime.py::test_scientific_labels_match_the_final1_release_and_the_spec": "the FINAL-1 release code and claims registry",
+  "tests/test_final2_runtime.py::test_frozen_call_free_policies_return_the_golden_outputs": "the full Phase-A dataset (the public tree recomputes the same golden outputs from its 24 rows: tests/test_public_frozen_policies.py)",
+  "tests/test_final2_runtime.py::test_historical_examples_exist_and_the_call_free_one_reproduces": "the frozen research matches in workshop_runs/ (examples/replays/ holds them re-simulated)",
+  "tests/test_final2_gameplay_polish.py::test_final1_scientific_hashes_are_unchanged": "the FINAL-1 registries and claims registry",
+  "tests/test_final2_gameplay_polish.py::test_final1_reproduction_record_still_says_reproduced": "the FINAL-1 reproduction record",
+  "tests/test_policy_closed_loop_m3.py::test_the_96_match_plan_reproduces_the_phase_a_matrix": "the Phase-A cross-model run manifest in workshop_runs/",
+  "tests/test_policy_closed_loop_m3.py::test_the_8_match_pilot_gate": "the Phase-A cross-model run manifest in workshop_runs/",
+  "tests/test_policy_closed_loop_m3.py::test_b1_and_b2_get_the_same_environment_seeds_and_target_policy": "the Phase-A cross-model run manifest in workshop_runs/",
+  "tests/test_policy_closed_loop_m3.py::test_resume_does_not_duplicate_a_finished_match": "the Phase-A cross-model run manifest in workshop_runs/",
+  "tests/test_policy_closed_loop_m3.py::test_policy_rng_is_explicit_reproducible_and_emulator_independent": "the Phase-A cross-model run manifest in workshop_runs/",
+  "tests/test_policy_closed_loop_m3.py::test_a_closed_loop_match_is_provider_free_and_complete": "the Phase-A cross-model run manifest in workshop_runs/",
+  "tests/test_policy_closed_loop_m3.py::test_target_v21_is_frozen_legal_and_keeps_v2_unchanged": "the full Phase-A dataset",
+  "tests/test_policy_closed_loop_m3.py::test_dry_run_creates_no_match": "the Phase-A cross-model run manifest in workshop_runs/",
+  "tests/test_policy_closed_loop_m3.py::test_phase_a_reference_is_read_only": "the full Phase-A dataset",
+  "tests/test_evaluation_m5d3.py::test_m5d3_config_has_a_new_immutable_experiment_id_distinct_from_m5d1_and_m5d2": "the M5 experiment specs in experiments/",
+  "tests/test_evaluation_m5d3.py::test_m5d3_config_expands_required_variants_on_a_shared_seed_set": "the M5 experiment specs in experiments/",
+  "tests/test_evaluation_m5d3.py::test_m5d3_config_uses_identical_episode_limits_across_matched_variants": "the M5 experiment specs in experiments/",
+  "tests/test_evaluation_m5d3.py::test_m5d3_strands_qwen_is_compatibility_only_and_never_enters_gameplay": "the M5 experiment specs in experiments/ (and a local Ollama with qwen:latest)",
+  "tests/test_evaluation_m5d3.py::test_m5d3_technical_failure_never_counted_as_a_supported_gameplay_loss": "the M5 experiment specs in experiments/ (and a local Ollama with qwen:latest)",
+  "tests/test_evaluation_m5d6.py::test_m5d6_config_has_new_immutable_id_and_shared_seeds": "the M5 experiment specs in experiments/",
+  "tests/test_evaluation_m5d6.py::test_m5d6_strands_qwen_stays_compatibility_only": "the M5 experiment specs in experiments/ (and a local Ollama with qwen:latest)",
+  "tests/test_gameplay_representation.py::test_m5d8_config_has_new_immutable_id_and_three_variants": "the M5 experiment specs in experiments/",
+  "tests/test_gameplay_representation.py::test_m5d8_episode_limits_identical_across_variants": "the M5 experiment specs in experiments/",
+  "tests/test_m5e2_competitive_benchmark.py::test_m5e2_full_config_has_five_shared_seeds_and_frozen_num_ctx": "the M5 experiment specs in experiments/",
+  "tests/test_m5e2_competitive_benchmark.py::test_m5e2_pilot_config_is_one_seed_same_variants_as_full": "the M5 experiment specs in experiments/",
+  "tests/test_m5e2_competitive_benchmark.py::test_m5e2_config_variant_ids_are_native_strands_scripted": "the M5 experiment specs in experiments/",
+  "tests/test_m5e2_competitive_benchmark.py::test_expand_produces_identical_seed_set_across_all_three_variants": "the M5 experiment specs in experiments/",
+  "tests/test_m5e2_competitive_benchmark.py::test_m5e2_output_directory_name_is_distinct_from_every_prior_milestone": "the M5 experiment specs in experiments/"
+ },
+ "tests_environment_dependent": {
+  "tests/test_gameplay_representation.py::test_m5d8_incompatible_strands_qwen_stays_out_of_gameplay": "needs a local Ollama server with qwen:latest"
+ },
+ "forbidden": [
+  "workshop_runs",
+  "evaluation_runs",
+  "experiments",
+  "runs",
+  "runtime_logs",
+  "replays",
+  "docs/history",
+  "workshop/policy_reports",
+  "workshop/policies/phase-a-v2/stage3-release",
+  "workshop/policies/stage4",
+  "workshop/policies/final-release/claims.json",
+  "workshop/policies/final-release/final_reproduction.json",
+  "workshop/policy_data/final_research_registry.json",
+  "workshop/policy_data/final_incident_registry.json",
+  "workshop/labs/lab01.py",
+  "workshop/play.py",
+  "assets/V3",
+  "assets/V4",
+  "public_overlay",
+  "PUBLIC_EXPORT_MANIFEST.yaml",
+  "PRIVATE_RESEARCH_ARCHIVE.md",
+  ".venv",
+  ".env"
+ ],
+ "provider_calls": 0
+}

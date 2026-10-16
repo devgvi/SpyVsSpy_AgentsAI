@@ -1,0 +1,18 @@
+# REAL vs REAL: every decision of both spies is a model call (Amazon Bedrock, the two research models).
+# Provider calls are billed to your AWS account. Credentials: the normal AWS credential chain, never this file.
+black:
+  policy: real_llm
+  provider: bedrock
+  model: us.anthropic.claude-sonnet-5-5
+  personality: cautious
+white:
+  policy: real_llm
+  provider: bedrock
+  model: us.openai.gpt-6.1-sol
+  personality: opportunist
+level: level_02
+seed: 42
+mode: playable
+view: play
+speed: 1.0
+show_telemetry: true

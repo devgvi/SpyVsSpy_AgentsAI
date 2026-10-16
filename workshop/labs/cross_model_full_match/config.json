@@ -1,0 +1,65 @@
+{
+  "experiment": "cross_model_full_match",
+  "experiment_version": "phase-a-v2",
+  "phase": "A",
+  "label": "phase-a-v2-sonnet55-vs-gpt61sol",
+  "description": "Same-personality cross-model matches, every condition played with both side assignments.",
+  "pairing": "same_personality",
+  "personalities": [
+    "racer",
+    "cautious",
+    "saboteur",
+    "opportunist"
+  ],
+  "seeds_file": "seeds.json",
+  "models": [
+    {
+      "key": "sonnet",
+      "display_name": "Claude Sonnet 5.5",
+      "provider": "bedrock",
+      "provider_model_id": "us.anthropic.claude-sonnet-5-5",
+      "temperature": "provider-default",
+      "provider_notes": "Rejects the temperature field on Bedrock ('temperature is deprecated for this model'). Prompt caching of the system prompt is on (explicit cache point). Thinking is the model's default (adaptive); median latency 2.8 s per call in the first tournament.",
+      "request_fields": null
+    },
+    {
+      "key": "gpt",
+      "display_name": "GPT-6.1 Sol",
+      "provider": "bedrock",
+      "provider_model_id": "us.openai.gpt-6.1-sol",
+      "temperature": "provider-default",
+      "provider_notes": "Served through Bedrock: the configured OpenAI API key was rejected (401 invalid_api_key) on 2026-10-02. Rejects the temperature field ('This model doesn't support the temperature field'). Refuses an explicit cache point; Bedrock cached its prompt on its own in the probes (cacheWrite/cacheRead tokens reported). Bounded probes on 2026-10-02 with one real game request each were variable: default reasoning effort 33 s once, then 1.9-2.5 s five times; 'medium' 45 s once; 'low' 2.1 s once, then six InternalServerException replies, then 1.3-1.7 s three times. The default effort is configured (no request fields). If the service is slow again at launch, setting request_fields to {\"reasoning\": {\"effort\": \"low\"}} is the lever - a provider-specific setting that changes behaviour and must then be reported. GPT-6 Sol (us.openai.gpt-6-sol) passed the short preflight but did not answer a game request within 90 s or 300 s, so it is not used.",
+      "request_fields": null
+    }
+  ],
+  "region": "us-east-1",
+  "runtime": "native",
+  "decision_timing": "evaluation",
+  "mission_clock": "simulation_time",
+  "mission_timer": "game_time",
+  "commit_policy": "barrier_seeded_order",
+  "timeout_seconds": 120,
+  "max_minutes": 60,
+  "clock_notes": "Simulated clock (phase-a-v2): the world and the shared 300 s mission countdown freeze while either spy's model is thinking, and the countdown follows game time, not the wall clock - model latency spends no mission time, so both models get the same simulated game time. Decisions taken at the same boundary commit together (response barrier) in an order drawn from the match seed, so a faster model cannot win same-instant races. Real latency is still recorded per decision. A request may take up to timeout_seconds; max_minutes is a wall-time safety cap (a match stopped by it is failed, not scored). phase-a-v1 (live_async, wall-clock timer) was never run.",
+  "mission_preset": "standard",
+  "puzzle": "riddle",
+  "items": "contested",
+  "spawn": "different_rooms",
+  "encounters": "on",
+  "lives": "on",
+  "parallel": 4,
+  "max_preflight_retries": 2,
+  "pricing": {
+    "currency": "USD",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-1-sol.html (GPT-6.1 Sol, US cross-region inference, short context, checked 2026-10-02). Claude Sonnet 5.5: no price on its Bedrock model card (billed through AWS Marketplace) - left unknown.",
+    "per_million_tokens": {
+      "us.openai.gpt-6.1-sol": {
+        "input": 2.2,
+        "cached_input": 0.11,
+        "cache_write": 2.75,
+        "output": 11.0
+      }
+    }
+  },
+  "pricing_help": "Leave null to report tokens only. To estimate cost, set e.g. {\"currency\": \"USD\", \"source\": \"<where the prices come from>\", \"per_million_tokens\": {\"us.anthropic.claude-sonnet-5-5\": {\"input\": 0, \"cached_input\": 0, \"output\": 0}}} with prices you have checked."
+}

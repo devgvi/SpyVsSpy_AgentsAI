@@ -1,0 +1,19 @@
+# Spy vs AI runtime configuration (FINAL-2 spec 12). Run: python -m spy_vs_ai.play --config configs/demo.yaml
+# Black: Hybrid-v2 escalating to Claude Sonnet 5.5 on Amazon Bedrock. White: a REAL LLM spy on a local Ollama model.
+# No credential ever goes in this file: Bedrock uses the normal AWS credential chain; Ollama needs none.
+# Not every model is available to every user: change the model ids to ones your account / server has.
+black:
+  policy: hybrid_v2
+  provider: bedrock
+  model: us.anthropic.claude-sonnet-5-5
+  personality: cautious
+white:
+  policy: real_llm
+  provider: ollama
+  model: qwen
+  personality: saboteur
+level: level_02
+seed: 42
+mode: playable
+speed: 1.0
+show_telemetry: true

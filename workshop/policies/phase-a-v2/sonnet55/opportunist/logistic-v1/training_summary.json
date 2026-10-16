@@ -1,0 +1,50 @@
+{
+  "policy_key": "sonnet55:opportunist",
+  "emulator": "logistic-v1",
+  "training_records": 547,
+  "seeds": {
+    "7101": 101,
+    "7202": 89,
+    "7303": 79,
+    "7422": 96,
+    "7435": 88,
+    "7457": 94
+  },
+  "matches": 12,
+  "actions": {
+    "move": 307,
+    "interact": 195,
+    "approach_opponent": 12,
+    "inspect": 10,
+    "avoid_opponent": 8,
+    "enter_safe_code": 7,
+    "place_trap": 7,
+    "wait": 1
+  },
+  "categories": {
+    "MOVE_PROGRESS": 317,
+    "SEARCH": 177,
+    "EXIT": 15,
+    "APPROACH": 12,
+    "INSPECT": 10,
+    "AVOID": 8,
+    "PLACE_TRAP": 7,
+    "WAIT": 1
+  },
+  "columns": 102,
+  "classes": [
+    "wait",
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 142,
+    "objective": 112.2345352126444,
+    "n_params": 824
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "policy_key": "gpt61sol:racer",
+  "candidate": "C1",
+  "rows": 363,
+  "phase_a_rows": 342,
+  "hard_rows": 21,
+  "weights": {
+    "phase_a": 1.0,
+    "hard": 1.0
+  },
+  "actions": {
+    "move": 187,
+    "interact": 150,
+    "inspect": 13,
+    "enter_safe_code": 8,
+    "approach_opponent": 5
+  },
+  "columns": 97,
+  "classes": [
+    "move",
+    "interact",
+    "inspect",
+    "approach_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 115,
+    "objective": 57.83586668511219,
+    "n_params": 490
+  },
+  "seconds": 0.53
+}

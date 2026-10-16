@@ -1,0 +1,48 @@
+{
+  "policy_key": "sonnet55:opportunist",
+  "emulator": "table-v1",
+  "training_records": 547,
+  "seeds": {
+    "7101": 101,
+    "7202": 89,
+    "7303": 79,
+    "7422": 96,
+    "7435": 88,
+    "7457": 94
+  },
+  "matches": 12,
+  "actions": {
+    "move": 307,
+    "interact": 195,
+    "approach_opponent": 12,
+    "inspect": 10,
+    "avoid_opponent": 8,
+    "enter_safe_code": 7,
+    "place_trap": 7,
+    "wait": 1
+  },
+  "categories": {
+    "MOVE_PROGRESS": 317,
+    "SEARCH": 177,
+    "EXIT": 15,
+    "APPROACH": 12,
+    "INSPECT": 10,
+    "AVOID": 8,
+    "PLACE_TRAP": 7,
+    "WAIT": 1
+  },
+  "buckets_per_level": {
+    "0": 1,
+    "1": 2,
+    "2": 4,
+    "3": 5,
+    "4": 7,
+    "5": 10,
+    "6": 15,
+    "7": 15,
+    "8": 19,
+    "9": 31,
+    "10": 37,
+    "11": 37
+  }
+}

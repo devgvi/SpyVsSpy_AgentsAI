@@ -1,0 +1,214 @@
+{
+ "buckets": {
+  "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown|time_pressure=relaxed": 81,
+  "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=low|life_balance=unknown|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown|time_pressure=relaxed": 14,
+  "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=high|life_balance=unknown|time_pressure=relaxed": 2,
+  "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=mid|life_balance=unknown|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=lead|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=mid|life_balance=equal|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": 5,
+  "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown|time_pressure=relaxed": 3,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown|time_pressure=relaxed": 117,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown|time_pressure=relaxed": 17,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": 9,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=lead|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown|time_pressure=relaxed": 112,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown|time_pressure=relaxed": 16,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=high|life_balance=unknown|time_pressure=relaxed": 2,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=mid|life_balance=unknown|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=lead|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=mid|life_balance=equal|time_pressure=relaxed": 1,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": 13,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal|time_pressure=relaxed": 2,
+  "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail|time_pressure=relaxed": 1,
+  "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": 9,
+  "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal|time_pressure=relaxed": 1,
+  "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail|time_pressure=relaxed": 2,
+  "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": 5,
+  "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail|time_pressure=relaxed": 1,
+  "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": 13,
+  "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail|time_pressure=relaxed": 1
+ },
+ "emulator": "coverage-v1",
+ "n": 437,
+ "patterns": {
+  "health_band": {
+   "high": 374,
+   "low": 1,
+   "mid": 62
+  },
+  "health_band_alerted": {
+   "high": 27,
+   "mid": 5
+  },
+  "legal_set": {
+   "wait+move": 17,
+   "wait+move+approach_opponent+avoid_opponent": 5,
+   "wait+move+inspect+enter_safe_code": 4,
+   "wait+move+interact": 82,
+   "wait+move+interact+approach_opponent+avoid_opponent": 13,
+   "wait+move+interact+avoid_opponent": 2,
+   "wait+move+interact+inspect": 134,
+   "wait+move+interact+inspect+approach_opponent+avoid_opponent": 17,
+   "wait+move+interact+inspect+place_trap": 131,
+   "wait+move+interact+inspect+place_trap+approach_opponent+avoid_opponent": 30,
+   "wait+move+interact+inspect+place_trap+avoid_opponent": 2
+  },
+  "life_balance_visible": {
+   "equal": 59,
+   "lead": 3,
+   "trail": 7
+  },
+  "opponent_state_alerted": {
+   "visible=True|alert=True|distance=close|life=equal": 28,
+   "visible=True|alert=True|distance=close|life=trail": 4
+  },
+  "time_pressure": {
+   "relaxed": 437
+  }
+ },
+ "ranges": {
+  "hearts": [
+   1,
+   3
+  ],
+  "known_locked_object_count": [
+   0,
+   3
+  ],
+  "known_unsearched_elsewhere_count": [
+   0,
+   6
+  ],
+  "legal_action_count": [
+   18,
+   30
+  ],
+  "move_target_count": [
+   17,
+   24
+  ],
+  "objectives_remaining_count": [
+   0,
+   2
+  ],
+  "opponent_hearts": [
+   2,
+   3
+  ],
+  "own_traps_armed": [
+   0,
+   0
+  ],
+  "room_inspected_unsearched_count": [
+   0,
+   1
+  ],
+  "room_uninspected_count": [
+   0,
+   4
+  ],
+  "room_unsearched_count": [
+   0,
+   4
+  ],
+  "room_untraversed_exits_count": [
+   0,
+   3
+  ],
+  "time_remaining_fraction": [
+   0.703,
+   1.0
+  ],
+  "trap_hits": [
+   0,
+   0
+  ],
+  "trap_inventory_total": [
+   4,
+   4
+  ],
+  "visited_room_count": [
+   0,
+   6
+  ]
+ },
+ "thresholds": {
+  "exact_low": 5,
+  "exact_medium": 20,
+  "near_medium": 50,
+  "rare": 5
+ },
+ "values": {
+  "current_room": {
+   "ambassador_office": 75,
+   "archives": 71,
+   "corridor": 55,
+   "main_office": 87,
+   "reception": 74,
+   "security_room": 75
+  },
+  "health_band": {
+   "high": 374,
+   "low": 1,
+   "mid": 62
+  },
+  "life_balance": {
+   "equal": 59,
+   "lead": 3,
+   "trail": 7,
+   "unknown": 368
+  },
+  "near_object_type": {
+   "armchair": 31,
+   "bookshelf": 64,
+   "desk": 26,
+   "door": 97,
+   "filing_cabinet": 30,
+   "globe": 19,
+   "lamp": 14,
+   "none": 22,
+   "painting": 16,
+   "plant": 56,
+   "safe": 11,
+   "side_table": 15,
+   "sofa": 19,
+   "statue_bust": 17
+  },
+  "opponent_distance_bucket": {
+   "close": 34,
+   "far": 4,
+   "near": 31,
+   "not_visible": 368
+  },
+  "recent_action_1": {
+   "approach_opponent": 2,
+   "enter_safe_code": 6,
+   "inspect": 5,
+   "interact": 159,
+   "move": 252,
+   "none": 12,
+   "wait": 1
+  },
+  "recent_action_2": {
+   "approach_opponent": 1,
+   "enter_safe_code": 6,
+   "inspect": 3,
+   "interact": 158,
+   "move": 244,
+   "none": 24,
+   "wait": 1
+  },
+  "room_status": {
+   "complete": 47,
+   "partial": 390
+  },
+  "time_pressure": {
+   "relaxed": 437
+  }
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "base_emulator": "logistic-v1",
+ "coverage_version": "coverage-v1",
+ "critical_state": "time_pressure not in (None, relaxed) or health_band == low (milestone 3, closed_loop_stability._critical)",
+ "dataset": "phase-a-v2",
+ "derived_from": {
+  "change": "low_ood_critical removed as a trigger; still computed and logged",
+  "development_evidence": "workshop/policy_reports/phase-a-v2/hybrid_pilot_report.html (8-match R2 pilot; critical-only escalations: 46, LLM changed the action in 24%, no local TVD gain). Development evidence only, not validation.",
+  "from_router": "R2",
+  "from_router_hash": "sha256:81fcece16925c290",
+  "from_version": "hybrid-router-v1"
+ },
+ "diagnostic_emulator": "table-v1",
+ "diagnostic_signals": [
+  "coverage_ood",
+  "low_ood_critical",
+  "low_high_confidence"
+ ],
+ "escalating_signals": [
+  "repetition_loop",
+  "strong_b1_b2_disagreement"
+ ],
+ "feature_schema_version": "policy-features-v1",
+ "identities": {
+  "gpt61sol:cautious": {
+   "b1_hash": "sha256:9b06982b612db9fa",
+   "base_emulator_hash": "sha256:855e6951866c4f37",
+   "coverage_hash": "sha256:51e0170733cfb78f",
+   "target_policy_hash": "sha256:dcc9a4edcab008f8",
+   "training_dataset_hash": "sha256:90a0f39349ab509a"
+  },
+  "gpt61sol:opportunist": {
+   "b1_hash": "sha256:e68577e0cbbeba92",
+   "base_emulator_hash": "sha256:1a989be4aa2be6f9",
+   "coverage_hash": "sha256:0a7469c4dcdd8371",
+   "target_policy_hash": "sha256:7c5cf603bcaf9563",
+   "training_dataset_hash": "sha256:90a0f39349ab509a"
+  },
+  "gpt61sol:racer": {
+   "b1_hash": "sha256:3b10842372e0a68d",
+   "base_emulator_hash": "sha256:a825167f22e418f5",
+   "coverage_hash": "sha256:fca18137c6c0c576",
+   "target_policy_hash": "sha256:bb16590cc7c627e8",
+   "training_dataset_hash": "sha256:90a0f39349ab509a"
+  },
+  "gpt61sol:saboteur": {
+   "b1_hash": "sha256:d4bafb89314c6b96",
+   "base_emulator_hash": "sha256:9b9e352f1344fba3",
+   "coverage_hash": "sha256:1df26499efd36cb4",
+   "target_policy_hash": "sha256:d51f22db5f46efff",
+   "training_dataset_hash": "sha256:90a0f39349ab509a"
+  },
+  "sonnet55:cautious": {
+   "b1_hash": "sha256:b9eb2b9f67f6bbbe",
+   "base_emulator_hash": "sha256:a4e30c16b1a9a25d",
+   "coverage_hash": "sha256:1fdaff46bdd68822",
+   "target_policy_hash": "sha256:75f55b2a971cf8ec",
+   "training_dataset_hash": "sha256:90a0f39349ab509a"
+  },
+  "sonnet55:opportunist": {
+   "b1_hash": "sha256:99f88b32c4774bbe",
+   "base_emulator_hash": "sha256:55d8dda32ad5ece5",
+   "coverage_hash": "sha256:6ef3355d9ee78854",
+   "target_policy_hash": "sha256:1333a34d8483cf07",
+   "training_dataset_hash": "sha256:90a0f39349ab509a"
+  },
+  "sonnet55:racer": {
+   "b1_hash": "sha256:3042e82bc8486b5d",
+   "base_emulator_hash": "sha256:29fca036f16b5458",
+   "coverage_hash": "sha256:767592e412630c9d",
+   "target_policy_hash": "sha256:11f4b1faccf5f003",
+   "training_dataset_hash": "sha256:90a0f39349ab509a"
+  },
+  "sonnet55:saboteur": {
+   "b1_hash": "sha256:6ffa92b1237f562a",
+   "base_emulator_hash": "sha256:191f2df8f946dbc8",
+   "coverage_hash": "sha256:6a6300808373f51e",
+   "target_policy_hash": "sha256:a5ff2c9d887d6065",
+   "training_dataset_hash": "sha256:90a0f39349ab509a"
+  }
+ },
+ "masking": "B1 and B2 distributions masked to the same executable legal actions (legal minus actions the surrogate cannot carry out, e.g. enter_safe_code without a code)",
+ "observable_inputs": [
+  "policy features of the live payload (policy-features-v1)",
+  "legal actions",
+  "B2 masked distribution + sampled proposal",
+  "coverage-v1 assessment",
+  "B1 masked distribution",
+  "the spy's own committed actions"
+ ],
+ "purpose": {
+  "R0": "reference: always B2",
+  "R2.1": "R2 without the LOW/OOD + critical trigger: repetition loops and strong B1/B2 disagreement only"
+ },
+ "router_hash": "sha256:216f3c9a3c4b3f78",
+ "router_version": "hybrid-router-v2",
+ "routers": {
+  "R0": [],
+  "R2.1": [
+   "repetition_loop",
+   "strong_b1_b2_disagreement"
+  ]
+ },
+ "signals": [
+  "repetition_loop",
+  "strong_b1_b2_disagreement",
+  "coverage_ood",
+  "low_ood_critical",
+  "low_high_confidence"
+ ],
+ "target_policy": "target-v2.1",
+ "thresholds": {
+  "b1_b2_tvd_above": 0.5,
+  "low_coverage_confidence_at_least": 0.8,
+  "repetition_window": 4
+ }
+}

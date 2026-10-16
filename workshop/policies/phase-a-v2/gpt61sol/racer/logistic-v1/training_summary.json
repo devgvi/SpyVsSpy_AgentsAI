@@ -1,0 +1,41 @@
+{
+  "policy_key": "gpt61sol:racer",
+  "emulator": "logistic-v1",
+  "training_records": 342,
+  "seeds": {
+    "7101": 52,
+    "7202": 56,
+    "7303": 48,
+    "7422": 64,
+    "7435": 53,
+    "7457": 69
+  },
+  "matches": 12,
+  "actions": {
+    "move": 180,
+    "interact": 142,
+    "inspect": 10,
+    "enter_safe_code": 7,
+    "approach_opponent": 3
+  },
+  "categories": {
+    "MOVE_PROGRESS": 182,
+    "SEARCH": 133,
+    "EXIT": 14,
+    "INSPECT": 10,
+    "APPROACH": 3
+  },
+  "columns": 96,
+  "classes": [
+    "move",
+    "interact",
+    "inspect",
+    "approach_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 107,
+    "objective": 48.07422972952253,
+    "n_params": 485
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "policy_key": "gpt61sol:cautious",
+  "candidate": "C1",
+  "rows": 735,
+  "phase_a_rows": 609,
+  "hard_rows": 126,
+  "weights": {
+    "phase_a": 1.0,
+    "hard": 1.0
+  },
+  "actions": {
+    "move": 278,
+    "interact": 232,
+    "inspect": 181,
+    "avoid_opponent": 26,
+    "enter_safe_code": 11,
+    "approach_opponent": 7
+  },
+  "columns": 109,
+  "classes": [
+    "move",
+    "interact",
+    "inspect",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 143,
+    "objective": 123.7838666514872,
+    "n_params": 660
+  },
+  "seconds": 1.63
+}

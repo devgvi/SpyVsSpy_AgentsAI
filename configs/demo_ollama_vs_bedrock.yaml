@@ -1,0 +1,21 @@
+# A local Ollama model (REAL LLM spy) vs Hybrid-v1 escalating to Bedrock. Start Ollama first (ollama serve) and pull
+# the model (ollama pull qwen); python -m spy_vs_ai.play --provider-status shows what is installed.
+black:
+  policy: real_llm
+  provider: ollama
+  model: qwen
+  personality: racer
+  provider_options:
+    base_url: http://localhost:11434
+white:
+  policy: hybrid_v1
+  provider: bedrock
+  model: us.openai.gpt-6.1-sol
+  personality: opportunist
+  provider_options:
+    region: us-east-1
+level: level_01
+seed: 42
+mode: playable
+speed: 1.0
+show_telemetry: true

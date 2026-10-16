@@ -1,0 +1,38 @@
+{
+  "policy_key": "sonnet55:saboteur",
+  "candidate": "C1",
+  "rows": 694,
+  "phase_a_rows": 514,
+  "hard_rows": 180,
+  "weights": {
+    "phase_a": 1.0,
+    "hard": 1.0
+  },
+  "actions": {
+    "move": 361,
+    "interact": 221,
+    "place_trap": 32,
+    "approach_opponent": 22,
+    "inspect": 22,
+    "avoid_opponent": 22,
+    "enter_safe_code": 10,
+    "wait": 4
+  },
+  "columns": 112,
+  "classes": [
+    "wait",
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 189,
+    "objective": 251.9950858862168,
+    "n_params": 904
+  },
+  "seconds": 2.58
+}

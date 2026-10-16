@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "passport",
+      "name": "Passport",
+      "sprite": "assets/items/passport.png"
+    },
+    {
+      "id": "secret_documents",
+      "name": "Secret Documents",
+      "sprite": "assets/items/documents.png"
+    },
+    {
+      "id": "archive_key",
+      "name": "Archive Key",
+      "sprite": "assets/items/embassy_key.png"
+    },
+    {
+      "id": "security_keycard",
+      "name": "Security Keycard",
+      "sprite": "assets/items/embassy_key.png"
+    }
+  ],
+  "required": ["passport", "secret_documents"],
+  "knowledge": [
+    {
+      "id": "safe_code",
+      "name": "Safe Code"
+    }
+  ]
+}

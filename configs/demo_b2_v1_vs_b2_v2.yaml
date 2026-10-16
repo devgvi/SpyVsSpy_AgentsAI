@@ -1,0 +1,13 @@
+# Call-free: B2-v1 vs B2-v2. No provider, no model, no credential, no network - nothing is called.
+black:
+  policy: b2_v1
+  personality: cautious
+white:
+  policy: b2_v2
+  personality: cautious
+level: level_02
+seed: 42
+mode: playable
+view: research
+speed: 1.0
+show_telemetry: true

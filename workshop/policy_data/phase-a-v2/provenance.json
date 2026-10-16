@@ -1,0 +1,231 @@
+{
+  "dataset": "phase-a-v2",
+  "dataset_hash": "sha256:90a0f39349ab509a",
+  "files": {
+    "decisions_clean.jsonl": "sha256:1337fce2a47daef385759dc53448b43befc8c741c36950b916d7361b29e9b447",
+    "decisions_all_valid.jsonl": "sha256:c2fa6f2c497c6e5b6f9e2c1381901b752c807781d8e9c1da1898cfd5129e2a77",
+    "controlled_snapshot_decisions.jsonl": "sha256:339c3b2c8c997d6a5f084a8f71dc083290eb7099e7dd526e434eb74502bd2cee",
+    "feature_schema.json": "sha256:aae16104f7d41c4342ba6cd0881209303e0534c2a2f99687ef5e2f24c5ea908b",
+    "dataset_summary.json": "sha256:1726c20f7aeb22a8d4c0c95fd52177af79eec9585cb787422ed825880acc6f2b"
+  },
+  "canonical_schema_version": "policy-data-v1",
+  "normalization_code_version": "policy-normalize-v1",
+  "normalization_code_hash": "sha256:45626f5e63a179d921308793fb44e223bd99f70480bc23a04397cc8ced079c9b",
+  "feature_schema_version": "policy-features-v1",
+  "source_type_mapping": {
+    "phase-a-v2-sonnet55-vs-gpt61sol": "full_match",
+    "behavior-grid-stage2-v1-sonnet55-vs-gpt61sol": "controlled_snapshot"
+  },
+  "sources": {
+    "full_match": {
+      "experiment_id": "phase-a-v2-sonnet55-vs-gpt61sol",
+      "decisions": {
+        "path": "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/analysis/decisions.jsonl",
+        "sha256": "sha256:0bb8bb56ba87002e257e8c0c407b5eabfdd8a6cf4ac94e458f6bd037a044624e",
+        "records": 4062
+      },
+      "manifest": {
+        "path": "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/manifest.json",
+        "sha256": "sha256:bf2fc15b9fa33ef9f93310db3b3e9b2c8606db632a2f4a9d29bfdd5e81d5a4fb"
+      },
+      "telemetry": {
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261002-235958/telemetry_match01.jsonl": "sha256:4b8023b0bcae6fa2fc139c9edd8be389a3016611ae0fcfcb8b5e9223ecd0bfd5",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-000003/telemetry_match01.jsonl": "sha256:c4352eab69db8a1cf13e68a4829f80bfa467dcf6ae0f8b21fd61b91aa8b6e3ae",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-001409/telemetry_match01.jsonl": "sha256:a9b324dc52ad8a0d1f7750c682998d374cddd6943828572ab294dbecd50e3f2d",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-001414/telemetry_match01.jsonl": "sha256:8f9d6ff1f86dce6202fbfe1a109bc4a42fe9ed6abbe56279c51570a4d24d0c7f",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-001419/telemetry_match01.jsonl": "sha256:409616fccf00b704e104ac4d3f5ffd3b925dbd4b8828bf19eb8a7e339d124a80",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-001424/telemetry_match01.jsonl": "sha256:3e3635f7acbc8fefcfb124bdc79498b06462eaf768a7e0c93b303cfd4fc775a2",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-001742/telemetry_match01.jsonl": "sha256:362d5abb5d44d9bf247b33d04f9b4b758070b9490fc9f4432d4f99c1e06dfecd",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-001915/telemetry_match01.jsonl": "sha256:903cb0a8fe60b9692f07a442207e42c3d5761bd7b7d2c57b9835d52edd751dfc",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-002142/telemetry_match01.jsonl": "sha256:ff1b03076c37f2a3296ec4d2d42b1c367180aac704b5aa5f42a779e988d16583",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-002300/telemetry_match01.jsonl": "sha256:c2cbde5252ae3a97fc342838be84e21287e36236df53ec74bc5ae9a6a1141081",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-002343/telemetry_match01.jsonl": "sha256:b163da5bd9aa77c8dcd88ad0249ad6b6e414d2118517d9165110fed6b8b8ac31",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-002352/telemetry_match01.jsonl": "sha256:5dadfd4d0d5bc6d4fcb1f9591815b9c2fcd7056a7c12ad66a66c306985029595",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-002634/telemetry_match01.jsonl": "sha256:e7da5cab611f6a7fc8b97d3886f57128191d71720aae722ecd8257977e614d48",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-002645/telemetry_match01.jsonl": "sha256:f101a7bd01df6357f03db7e883b49be35c48cd4e5a62c7137df2f80deada71b6",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-002722/telemetry_match01.jsonl": "sha256:c6bbb4e7e20a142c108a84391d443f974def63513b9a1f37d47b1be166eeaf40",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-002951/telemetry_match01.jsonl": "sha256:ac77dbb2020f8435ae6e3577aa875de1c790a37980a98ed077dbbd606adb68be",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-003151/telemetry_match01.jsonl": "sha256:b94647faaa75ead76bcc6e0f6516bcfdecd5a8d6f0d9ee550fb6458d11336b15",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-003226/telemetry_match01.jsonl": "sha256:561b484bd4851c0118ee46a42422774ef00bef2bfb22ebf597caacb681f015be",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-003243/telemetry_match01.jsonl": "sha256:cf70f20920c6ee69af489e8c7c400d51bd642a3dc8954d9e8d1c3878fba6cac5",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-003358/telemetry_match01.jsonl": "sha256:44b131781df34062003949aaf35118b99e269535f2850d8d94ee6513d46b6c2a",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-003615/telemetry_match01.jsonl": "sha256:a8bd442523ddf98490038bd3296553b80e86d77464a0263aa117464f80b74349",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-003826/telemetry_match01.jsonl": "sha256:b573988e444d60593e95b0175244e5a6973a16479ead9d8601709f178c3e8e3c",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-003835/telemetry_match01.jsonl": "sha256:813f17d2ea576fd595b4525fd20a4629b045989d88ac3556b70c969882ae6d1e",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-003842/telemetry_match01.jsonl": "sha256:3fe8168641f38cf612069004b39a050cab1957d0abc4717feb5d544e67f5679c",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-004325/telemetry_match01.jsonl": "sha256:166e74e967848d55cd2634226180f38158162ee707c019c54799499d4e1c4cca",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-004346/telemetry_match01.jsonl": "sha256:c9fde96fe985cfa9adc28a06739c0c719ba8974458cdd9f72cf16bdc6d1a70e4",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-004353/telemetry_match01.jsonl": "sha256:5c30d17894ded4be8c7ee37cdd11e300dd9eaac6596132b58de79a577abb1043",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-004358/telemetry_match01.jsonl": "sha256:2a28c62241340f63554670eb885177d22d31372f0beacd1b006c8b207a304336",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-010307/telemetry_match01.jsonl": "sha256:0fa1ecc4b3697a167af30bb792bf6908b5fd2eb15b3874e4a7758fd130884745",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-022555/telemetry_match01.jsonl": "sha256:afeacf7e561698c1f86d3f009e47ce67ddd7968240df68fbd526b5738a8957b0",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-022714/telemetry_match01.jsonl": "sha256:183fb71f24640ad10b1d28803b87d61a62e89d7455546bdb588b6f5ecda44497",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-022910/telemetry_match01.jsonl": "sha256:278dedeb20e1f44f7049b58629cc2f6bd873d0a84c1e19a25547c878cab1de25",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-022959/telemetry_match01.jsonl": "sha256:c8cfabb604cb8f76314ce7b63aa53a4391b513d5aadf4f3cb19c37e753e6088a",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-023339/telemetry_match01.jsonl": "sha256:ae85c8d2b02cc7ac56258f0c8a677b61f8db8c32640a7fd903adf88ccb622bc4",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-023408/telemetry_match01.jsonl": "sha256:74ff0e2428d65434eeae5ee738f79315c7f03e55ddc07c81347f096285dde5ed",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-023437/telemetry_match01.jsonl": "sha256:222143efff8caec8a8d5fbc29745d69b768c7c89af3f247dfe0fdcca2856a6b5",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-023515/telemetry_match01.jsonl": "sha256:ceac45d76f1752de329ca8bc52828928d5702dfd492037a0e14676f0fb68128f",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-023722/telemetry_match01.jsonl": "sha256:befe388b1828cfed0efe3414a170f794acfd7a60db37f76dbdb9d8640b764c25",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-025956/telemetry_match01.jsonl": "sha256:a6cf04dbb292f0e061256d51f2f30ec9390f5cfa7c0a178743d3d7cc5daca297",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-034941/telemetry_match01.jsonl": "sha256:f11ea515edd517141480b34bae0520a26dcb2343459cb2a923f3b0b39783fd7b",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-042232/telemetry_match01.jsonl": "sha256:9be1a3f2c1d44f166cf115d9cc9b363e0b9a122c9a6c84dba25d8c807b13adc6",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-054248/telemetry_match01.jsonl": "sha256:cc6d0e24d96c3c0ed6fb0179b0be4ef6e66c5c2de5e0e1576560407fcd7692b4",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-054425/telemetry_match01.jsonl": "sha256:68c293ec885a1211a59443cc48b0e39d2fc2508a568dd7c6a7565cb7547eff9b",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-063802/telemetry_match01.jsonl": "sha256:486f9cef40ed549634c33655feddbb17ed2104abb14b31f67ca56f062ea84a29",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-071151/telemetry_match01.jsonl": "sha256:f6d7e61b0defd923d3ba266b170c6c5490d1664c81134e2bc616a72e88954cea",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-091158/telemetry_match01.jsonl": "sha256:614f38e5d391bdd940b681b515b464767c2987b1101ecf51623df697ebef7c35",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-093442/telemetry_match01.jsonl": "sha256:61dee7b274a100511860fc2605abf4b05a08d417cb38086f642a62ca2025ec4f",
+        "workshop_runs/cross-model-phase-a-v2-sonnet55-vs-gpt61sol/live/20261003-093456/telemetry_match01.jsonl": "sha256:f69cee92a0185f49f0830b6eda341a02b502763f7d67b5ad2c00e4ffb6ba3e41"
+      },
+      "matches": 48,
+      "export_rows_without_match": 0,
+      "game_version": "sha256:06d67080f58836cf"
+    },
+    "controlled_snapshot": {
+      "experiment_id": "behavior-grid-stage2-v1-sonnet55-vs-gpt61sol",
+      "decisions": {
+        "path": "workshop_runs/behavior-grid-stage2-v1-sonnet55-vs-gpt61sol/analysis/decisions.jsonl",
+        "sha256": "sha256:14b68e529dbc735082caf5fd43b3367f2862c2fdb417ad9d893af80029f97f96",
+        "records": 352
+      },
+      "config": {
+        "path": "workshop/labs/controlled_behavior_grid/config.json",
+        "sha256": "sha256:704baa486dff236a8e837e15fcdcf90b93335b2f5407064b1f83e2d954847193"
+      },
+      "snapshots_rebuilt": [
+        "encounter_equal_critical",
+        "encounter_equal_relaxed",
+        "encounter_self_leads",
+        "encounter_self_trails",
+        "exit_ready_alert",
+        "inspect_optional_critical",
+        "inspect_optional_relaxed",
+        "trap_optional_relaxed"
+      ],
+      "rebuild": "behavior_grid_snapshots.build_frozen with StubClient (no provider call, no sample written)"
+    }
+  },
+  "field_mappings": {
+    "full_match": {
+      "action": "intended_action",
+      "target": "intended_target",
+      "fallback": "fallback_used",
+      "repair": "repair_used",
+      "legal": "legal_action_names (targets from the raw llm_decision.legal_actions)",
+      "spy_id": "actor_id",
+      "model": "lab_model_key -> model (sonnet55 / gpt61sol)",
+      "model_id": "model_id",
+      "personality": "personality",
+      "seed": "seed",
+      "side": "side",
+      "match_id": "match_id",
+      "decision_id": "decision_id",
+      "valid": "valid",
+      "provider": "provider",
+      "category": "phase_a_category"
+    },
+    "controlled_snapshot": {
+      "intended_action": "intended_action",
+      "intended_target": "intended_target",
+      "intended_trap_type": "intended_trap_type",
+      "committed_action": "committed_action",
+      "committed_target": "committed_target",
+      "fallback_used": "fallback_used",
+      "repair_used": "repair_used",
+      "clean": "clean (Stage-2 definition)",
+      "model": "lab_model_key -> model",
+      "personality": "personality",
+      "snapshot_id": "snapshot_id",
+      "category": "stage2_category",
+      "legal_actions": "legal actions (targets from the rebuilt payload; checked equal)"
+    }
+  },
+  "unavailable_fields": {
+    "full_match": {
+      "strategy_memory": "not logged in Phase-A telemetry (only its size and counts); recent actions are rebuilt from the actor's earlier decisions in the match",
+      "system_prompt_hash": "not logged in Phase-A telemetry (prompt_version and personality_profile are)",
+      "committed_target_after_lifecycle": "the barrier commits the executed action; the lifecycle records how it ended"
+    },
+    "controlled_snapshot": {
+      "match_id": "a frozen snapshot is not a match",
+      "observation": "not in the export; rebuilt call-free from the snapshot definition and checked against observation_hash",
+      "runtime_name": "not in the Stage-2 export (agent_runtime_version and representation_variant are)"
+    }
+  },
+  "observation_projection": {
+    "dropped_top_level": [
+      "communication",
+      "time",
+      "schema_version"
+    ],
+    "dropped_self": [
+      "knowledge"
+    ],
+    "why": "fields the model never sees (compact_observation_for_model + slim_live_payload)"
+  },
+  "clean_definition": {
+    "excluded_from_all_valid": [
+      "fallback",
+      "action_not_in_legal_set",
+      "telemetry_incomplete"
+    ],
+    "excluded_from_clean_also": [
+      "repair_after_provider_error",
+      "repair_after_invalid_output",
+      "not_clean_stage2"
+    ],
+    "flagged_not_excluded": [
+      "provider_transport_retries"
+    ]
+  },
+  "versions": {
+    "full_match": {
+      "prompt_version": [
+        "m5a-agent-v1"
+      ],
+      "observation_version": [
+        "obs-v1"
+      ],
+      "memory_version": [
+        "memory-v1"
+      ],
+      "action_schema_version": [
+        "action-v1"
+      ],
+      "runtime_name": [
+        "native_tool_like"
+      ],
+      "runtime_version": [
+        "native-tool-like-v1"
+      ],
+      "game_code_hash": [
+        "sha256:06d67080f58836cf"
+      ]
+    },
+    "controlled_snapshot": {
+      "prompt_version": [
+        "m5a-agent-v1"
+      ],
+      "observation_version": [
+        "obs-v1"
+      ],
+      "memory_version": [
+        "memory-v1"
+      ],
+      "action_schema_version": [
+        "action-v1"
+      ],
+      "runtime_name": [
+        "None"
+      ],
+      "runtime_version": [
+        "native-tool-like-v1"
+      ],
+      "game_code_hash": [
+        "sha256:06d67080f58836cf"
+      ]
+    }
+  },
+  "originals_untouched": "sources are opened read-only; their sha256 is recorded above"
+}

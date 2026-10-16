@@ -1,0 +1,34 @@
+{
+  "policy_key": "gpt61sol:opportunist",
+  "candidate": "C1",
+  "rows": 480,
+  "phase_a_rows": 451,
+  "hard_rows": 29,
+  "weights": {
+    "phase_a": 1.0,
+    "hard": 1.0
+  },
+  "actions": {
+    "move": 222,
+    "interact": 157,
+    "avoid_opponent": 51,
+    "inspect": 33,
+    "approach_opponent": 11,
+    "enter_safe_code": 6
+  },
+  "columns": 99,
+  "classes": [
+    "move",
+    "interact",
+    "inspect",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 132,
+    "objective": 117.86562175588533,
+    "n_params": 600
+  },
+  "seconds": 0.95
+}

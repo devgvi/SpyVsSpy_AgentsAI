@@ -1,0 +1,174 @@
+{
+ "anchor": [
+  80,
+  115
+ ],
+ "canvas": [
+  160,
+  120
+ ],
+ "frames": {
+  "black_spy": {
+   "celebrate": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "disappear": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "disarm": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "fight": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "hit": {
+    "down": 2,
+    "left": 2,
+    "right": 2,
+    "up": 2
+   },
+   "idle": {
+    "down": 2,
+    "left": 2,
+    "right": 2,
+    "up": 2
+   },
+   "inspect": {
+    "down": 3,
+    "left": 3,
+    "right": 3,
+    "up": 3
+   },
+   "ko": {
+    "down": 3,
+    "left": 3,
+    "right": 3,
+    "up": 3
+   },
+   "place_trap": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "respawn": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "search": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "walk": {
+    "down": 8,
+    "left": 8,
+    "right": 8,
+    "up": 8
+   }
+  },
+  "white_spy": {
+   "celebrate": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "disappear": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "disarm": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "fight": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "hit": {
+    "down": 2,
+    "left": 2,
+    "right": 2,
+    "up": 2
+   },
+   "idle": {
+    "down": 2,
+    "left": 2,
+    "right": 2,
+    "up": 2
+   },
+   "inspect": {
+    "down": 3,
+    "left": 3,
+    "right": 3,
+    "up": 3
+   },
+   "ko": {
+    "down": 3,
+    "left": 3,
+    "right": 3,
+    "up": 3
+   },
+   "place_trap": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "respawn": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "search": {
+    "down": 4,
+    "left": 4,
+    "right": 4,
+    "up": 4
+   },
+   "walk": {
+    "down": 8,
+    "left": 8,
+    "right": 8,
+    "up": 8
+   }
+  }
+ },
+ "noise": {
+  "black_spy": {
+   "frames_clipped": [],
+   "pieces_removed": 5,
+   "pixels_removed": 44,
+   "scale": 0.7339
+  },
+  "white_spy": {
+   "frames_clipped": [],
+   "pieces_removed": 5,
+   "pixels_removed": 44,
+   "scale": 0.7477
+  }
+ }
+}

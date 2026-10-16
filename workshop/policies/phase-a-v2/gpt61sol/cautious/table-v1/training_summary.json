@@ -1,0 +1,44 @@
+{
+  "policy_key": "gpt61sol:cautious",
+  "emulator": "table-v1",
+  "training_records": 609,
+  "seeds": {
+    "7101": 109,
+    "7202": 120,
+    "7303": 95,
+    "7422": 98,
+    "7435": 77,
+    "7457": 110
+  },
+  "matches": 12,
+  "actions": {
+    "move": 246,
+    "interact": 171,
+    "inspect": 162,
+    "avoid_opponent": 20,
+    "enter_safe_code": 8,
+    "approach_opponent": 2
+  },
+  "categories": {
+    "MOVE_PROGRESS": 247,
+    "INSPECT": 162,
+    "SEARCH": 159,
+    "AVOID": 20,
+    "EXIT": 19,
+    "APPROACH": 2
+  },
+  "buckets_per_level": {
+    "0": 1,
+    "1": 2,
+    "2": 4,
+    "3": 5,
+    "4": 7,
+    "5": 11,
+    "6": 15,
+    "7": 15,
+    "8": 21,
+    "9": 33,
+    "10": 36,
+    "11": 38
+  }
+}

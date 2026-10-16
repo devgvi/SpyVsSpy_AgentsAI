@@ -1,0 +1,19 @@
+# Hybrid-v2 (B2-v2 + router R2.1: 14.6% fewer provider calls in Stage 5C, not safely promotable under the frozen
+# confirmatory rule) vs a REAL LLM spy, both on Bedrock.
+black:
+  policy: hybrid_v2
+  provider: bedrock
+  model: us.anthropic.claude-sonnet-5-5
+  personality: cautious
+  max_provider_calls: 120
+white:
+  policy: real_llm
+  provider: bedrock
+  model: us.openai.gpt-6.1-sol
+  personality: cautious
+level: level_03
+seed: 42
+mode: playable
+view: research
+speed: 1.0
+show_telemetry: true

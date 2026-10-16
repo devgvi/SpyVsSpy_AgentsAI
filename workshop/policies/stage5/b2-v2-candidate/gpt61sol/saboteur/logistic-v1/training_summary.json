@@ -1,0 +1,38 @@
+{
+  "policy_key": "gpt61sol:saboteur",
+  "candidate": "C1",
+  "rows": 512,
+  "phase_a_rows": 381,
+  "hard_rows": 131,
+  "weights": {
+    "phase_a": 1.0,
+    "hard": 1.0
+  },
+  "actions": {
+    "move": 204,
+    "interact": 169,
+    "inspect": 73,
+    "approach_opponent": 30,
+    "place_trap": 18,
+    "enter_safe_code": 8,
+    "disarm": 5,
+    "avoid_opponent": 5
+  },
+  "columns": 114,
+  "classes": [
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "disarm",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 92,
+    "objective": 205.2675254443848,
+    "n_params": 920
+  },
+  "seconds": 0.94
+}

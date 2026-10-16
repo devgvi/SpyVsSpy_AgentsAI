@@ -1,0 +1,30 @@
+# Your own matches: traces, replays and logs stay local (anchored: examples/replays/ is tracked)
+/runs/
+/replays/
+/runtime_logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Secrets and local configuration: never commit credentials
+.env
+.env.*
+*.pem
+*.key
+credentials
+credentials.json
+.aws/
+live_config.toml
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp

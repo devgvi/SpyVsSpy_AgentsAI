@@ -1,0 +1,805 @@
+{
+ "actions": [
+  "wait",
+  "move",
+  "interact",
+  "inspect",
+  "place_trap",
+  "disarm",
+  "approach_opponent",
+  "avoid_opponent",
+  "enter_safe_code"
+ ],
+ "alpha": 2.0,
+ "dims": [
+  "opponent_alert_present",
+  "inspect_legal",
+  "search_legal",
+  "place_trap_legal",
+  "approach_opponent_legal",
+  "avoid_opponent_legal",
+  "opponent_visible",
+  "mission_complete",
+  "health_band",
+  "life_balance",
+  "time_pressure"
+ ],
+ "emulator": "table-v1",
+ "min_count": 5,
+ "n_train": 670,
+ "tables": {
+  "0": {
+   "*": {
+    "approach_opponent": 3,
+    "avoid_opponent": 32,
+    "enter_safe_code": 7,
+    "inspect": 155,
+    "interact": 160,
+    "move": 295,
+    "place_trap": 1,
+    "wait": 17
+   }
+  },
+  "1": {
+   "opponent_alert_present=False": {
+    "approach_opponent": 3,
+    "avoid_opponent": 1,
+    "enter_safe_code": 7,
+    "inspect": 154,
+    "interact": 157,
+    "move": 278,
+    "place_trap": 1,
+    "wait": 17
+   },
+   "opponent_alert_present=True": {
+    "avoid_opponent": 31,
+    "inspect": 1,
+    "interact": 3,
+    "move": 17
+   }
+  },
+  "10": {
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown": {
+    "interact": 10,
+    "move": 102,
+    "wait": 17
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown": {
+    "interact": 2,
+    "move": 11
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=high|life_balance=unknown": {
+    "interact": 2,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=lead": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal": {
+    "approach_opponent": 3,
+    "move": 8
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=equal": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown": {
+    "enter_safe_code": 4,
+    "inspect": 4,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown": {
+    "enter_safe_code": 1,
+    "inspect": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=lead": {
+    "enter_safe_code": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal": {
+    "enter_safe_code": 1,
+    "inspect": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown": {
+    "inspect": 123,
+    "interact": 111,
+    "move": 3
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown": {
+    "inspect": 7,
+    "interact": 5
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=lead": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal": {
+    "inspect": 13,
+    "interact": 18,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal": {
+    "inspect": 4,
+    "interact": 6,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown": {
+    "move": 115
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown": {
+    "move": 7,
+    "place_trap": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=high|life_balance=unknown": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=lead": {
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=False|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal": {
+    "avoid_opponent": 1,
+    "move": 16
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal": {
+    "move": 5
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=equal": {
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal": {
+    "avoid_opponent": 10,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal": {
+    "avoid_opponent": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal": {
+    "avoid_opponent": 5,
+    "inspect": 1,
+    "interact": 3
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=equal": {
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal": {
+    "avoid_opponent": 10,
+    "move": 6
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal": {
+    "avoid_opponent": 3,
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail": {
+    "avoid_opponent": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=equal": {
+    "avoid_opponent": 1
+   }
+  },
+  "11": {
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown|time_pressure=relaxed": {
+    "interact": 10,
+    "move": 102,
+    "wait": 16
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown|time_pressure=tight": {
+    "wait": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown|time_pressure=relaxed": {
+    "interact": 2,
+    "move": 11
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=high|life_balance=unknown|time_pressure=relaxed": {
+    "interact": 2,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=lead|time_pressure=tight": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "approach_opponent": 2,
+    "move": 8
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=tight": {
+    "approach_opponent": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal|time_pressure=relaxed": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail|time_pressure=relaxed": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown|time_pressure=relaxed": {
+    "enter_safe_code": 4,
+    "inspect": 4,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown|time_pressure=relaxed": {
+    "enter_safe_code": 1,
+    "inspect": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=lead|time_pressure=relaxed": {
+    "enter_safe_code": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "enter_safe_code": 1,
+    "inspect": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown|time_pressure=relaxed": {
+    "inspect": 123,
+    "interact": 111,
+    "move": 3
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown|time_pressure=relaxed": {
+    "inspect": 7,
+    "interact": 5
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=lead|time_pressure=relaxed": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "inspect": 13,
+    "interact": 18,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal|time_pressure=relaxed": {
+    "inspect": 4,
+    "interact": 6,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high|life_balance=unknown|time_pressure=relaxed": {
+    "move": 115
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown|time_pressure=relaxed": {
+    "move": 6,
+    "place_trap": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid|life_balance=unknown|time_pressure=tight": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=high|life_balance=unknown|time_pressure=relaxed": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=lead|time_pressure=relaxed": {
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=False|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "avoid_opponent": 1,
+    "move": 16
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal|time_pressure=relaxed": {
+    "move": 5
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "avoid_opponent": 10,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal|time_pressure=relaxed": {
+    "avoid_opponent": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "avoid_opponent": 5,
+    "inspect": 1,
+    "interact": 3
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "avoid_opponent": 10,
+    "move": 6
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=equal|time_pressure=relaxed": {
+    "avoid_opponent": 3,
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid|life_balance=trail|time_pressure=relaxed": {
+    "avoid_opponent": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high|life_balance=equal|time_pressure=relaxed": {
+    "avoid_opponent": 1
+   }
+  },
+  "2": {
+   "opponent_alert_present=False|inspect_legal=False": {
+    "approach_opponent": 3,
+    "interact": 16,
+    "move": 124,
+    "wait": 17
+   },
+   "opponent_alert_present=False|inspect_legal=True": {
+    "avoid_opponent": 1,
+    "enter_safe_code": 7,
+    "inspect": 154,
+    "interact": 141,
+    "move": 154,
+    "place_trap": 1
+   },
+   "opponent_alert_present=True|inspect_legal=False": {
+    "avoid_opponent": 11,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=True": {
+    "avoid_opponent": 20,
+    "inspect": 1,
+    "interact": 3,
+    "move": 8
+   }
+  },
+  "3": {
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False": {
+    "approach_opponent": 3,
+    "interact": 16,
+    "move": 124,
+    "wait": 17
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False": {
+    "enter_safe_code": 7,
+    "inspect": 7,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True": {
+    "avoid_opponent": 1,
+    "inspect": 147,
+    "interact": 141,
+    "move": 153,
+    "place_trap": 1
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False": {
+    "avoid_opponent": 11,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True": {
+    "avoid_opponent": 20,
+    "inspect": 1,
+    "interact": 3,
+    "move": 8
+   }
+  },
+  "4": {
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False": {
+    "approach_opponent": 3,
+    "interact": 16,
+    "move": 124,
+    "wait": 17
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False": {
+    "enter_safe_code": 7,
+    "inspect": 7,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False": {
+    "inspect": 147,
+    "interact": 141,
+    "move": 5
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True": {
+    "avoid_opponent": 1,
+    "move": 148,
+    "place_trap": 1
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False": {
+    "avoid_opponent": 11,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False": {
+    "avoid_opponent": 5,
+    "inspect": 1,
+    "interact": 3,
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True": {
+    "avoid_opponent": 15,
+    "move": 7
+   }
+  },
+  "5": {
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False": {
+    "interact": 15,
+    "move": 114,
+    "wait": 17
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True": {
+    "approach_opponent": 3,
+    "interact": 1,
+    "move": 10
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False": {
+    "enter_safe_code": 6,
+    "inspect": 5,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=True": {
+    "enter_safe_code": 1,
+    "inspect": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False": {
+    "inspect": 130,
+    "interact": 117,
+    "move": 3
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True": {
+    "inspect": 17,
+    "interact": 24,
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False": {
+    "move": 125,
+    "place_trap": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True": {
+    "avoid_opponent": 1,
+    "move": 23
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True": {
+    "avoid_opponent": 11,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True": {
+    "avoid_opponent": 5,
+    "inspect": 1,
+    "interact": 3,
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True": {
+    "avoid_opponent": 15,
+    "move": 7
+   }
+  },
+  "6": {
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False": {
+    "interact": 14,
+    "move": 114,
+    "wait": 17
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True": {
+    "approach_opponent": 3,
+    "interact": 1,
+    "move": 10
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False": {
+    "enter_safe_code": 5,
+    "inspect": 5,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True": {
+    "enter_safe_code": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True": {
+    "enter_safe_code": 1,
+    "inspect": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False": {
+    "inspect": 130,
+    "interact": 116,
+    "move": 3
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True": {
+    "inspect": 17,
+    "interact": 24,
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False": {
+    "move": 123,
+    "place_trap": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=True": {
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=False": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True": {
+    "avoid_opponent": 1,
+    "move": 22
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True": {
+    "avoid_opponent": 11,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True": {
+    "avoid_opponent": 5,
+    "inspect": 1,
+    "interact": 3,
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True": {
+    "avoid_opponent": 15,
+    "move": 7
+   }
+  },
+  "7": {
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False": {
+    "interact": 14,
+    "move": 114,
+    "wait": 17
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True": {
+    "approach_opponent": 3,
+    "interact": 1,
+    "move": 10
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False": {
+    "enter_safe_code": 5,
+    "inspect": 5,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True": {
+    "enter_safe_code": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True": {
+    "enter_safe_code": 1,
+    "inspect": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False": {
+    "inspect": 130,
+    "interact": 116,
+    "move": 3
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True": {
+    "inspect": 17,
+    "interact": 24,
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False": {
+    "move": 123,
+    "place_trap": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True": {
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=False|opponent_visible=True": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True": {
+    "avoid_opponent": 1,
+    "move": 22
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True": {
+    "avoid_opponent": 11,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True": {
+    "avoid_opponent": 5,
+    "inspect": 1,
+    "interact": 3,
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True": {
+    "avoid_opponent": 15,
+    "move": 7
+   }
+  },
+  "8": {
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False": {
+    "interact": 12,
+    "move": 113,
+    "wait": 17
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True": {
+    "interact": 2,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False": {
+    "approach_opponent": 3,
+    "move": 10
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False": {
+    "enter_safe_code": 5,
+    "inspect": 5,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False": {
+    "enter_safe_code": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False": {
+    "enter_safe_code": 1,
+    "inspect": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False": {
+    "inspect": 130,
+    "interact": 116,
+    "move": 3
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False": {
+    "inspect": 17,
+    "interact": 24,
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False": {
+    "move": 122,
+    "place_trap": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True": {
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=False|opponent_visible=True|mission_complete=False": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False": {
+    "avoid_opponent": 1,
+    "move": 21
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True": {
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False": {
+    "avoid_opponent": 11,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False": {
+    "avoid_opponent": 5,
+    "inspect": 1,
+    "interact": 3
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True": {
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False": {
+    "avoid_opponent": 14,
+    "move": 7
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True": {
+    "avoid_opponent": 1
+   }
+  },
+  "9": {
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high": {
+    "interact": 10,
+    "move": 102,
+    "wait": 17
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid": {
+    "interact": 2,
+    "move": 11
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=high": {
+    "interact": 2,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high": {
+    "approach_opponent": 3,
+    "move": 8
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid": {
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high": {
+    "enter_safe_code": 4,
+    "inspect": 4,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid": {
+    "enter_safe_code": 1,
+    "inspect": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high": {
+    "enter_safe_code": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high": {
+    "enter_safe_code": 1,
+    "inspect": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high": {
+    "inspect": 123,
+    "interact": 111,
+    "move": 3
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid": {
+    "inspect": 7,
+    "interact": 5
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high": {
+    "interact": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high": {
+    "inspect": 13,
+    "interact": 18,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid": {
+    "inspect": 4,
+    "interact": 6,
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=high": {
+    "move": 115
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=False|health_band=mid": {
+    "move": 7,
+    "place_trap": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=False|opponent_visible=False|mission_complete=True|health_band=high": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=False|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high": {
+    "move": 2
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=False|opponent_visible=True|mission_complete=False|health_band=high": {
+    "move": 1
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high": {
+    "avoid_opponent": 1,
+    "move": 16
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid": {
+    "move": 5
+   },
+   "opponent_alert_present=False|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high": {
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high": {
+    "avoid_opponent": 10,
+    "move": 9
+   },
+   "opponent_alert_present=True|inspect_legal=False|search_legal=False|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid": {
+    "avoid_opponent": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high": {
+    "avoid_opponent": 5,
+    "inspect": 1,
+    "interact": 3
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=False|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high": {
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=high": {
+    "avoid_opponent": 10,
+    "move": 6
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=False|health_band=mid": {
+    "avoid_opponent": 4,
+    "move": 1
+   },
+   "opponent_alert_present=True|inspect_legal=True|search_legal=True|place_trap_legal=True|approach_opponent_legal=True|avoid_opponent_legal=True|opponent_visible=True|mission_complete=True|health_band=high": {
+    "avoid_opponent": 1
+   }
+  }
+ },
+ "uniform_alpha": 1.0
+}

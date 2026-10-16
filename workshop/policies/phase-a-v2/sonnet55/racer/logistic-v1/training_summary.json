@@ -1,0 +1,41 @@
+{
+  "policy_key": "sonnet55:racer",
+  "emulator": "logistic-v1",
+  "training_records": 437,
+  "seeds": {
+    "7101": 66,
+    "7202": 76,
+    "7303": 66,
+    "7422": 86,
+    "7435": 62,
+    "7457": 81
+  },
+  "matches": 12,
+  "actions": {
+    "move": 260,
+    "interact": 166,
+    "inspect": 5,
+    "enter_safe_code": 4,
+    "approach_opponent": 2
+  },
+  "categories": {
+    "MOVE_PROGRESS": 269,
+    "SEARCH": 150,
+    "EXIT": 11,
+    "INSPECT": 5,
+    "APPROACH": 2
+  },
+  "columns": 99,
+  "classes": [
+    "move",
+    "interact",
+    "inspect",
+    "approach_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 116,
+    "objective": 55.9408464633414,
+    "n_params": 500
+  }
+}

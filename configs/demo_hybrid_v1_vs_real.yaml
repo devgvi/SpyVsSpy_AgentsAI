@@ -1,0 +1,19 @@
+# Hybrid-v1 (B2-v1 + router R2.1, CONFIRMED / GENERALIZED RESEARCH BASELINE) vs a REAL LLM spy, both on Bedrock.
+# The hybrid escalates to its model only when R2.1 triggers; max_provider_calls caps those escalations.
+black:
+  policy: hybrid_v1
+  provider: bedrock
+  model: us.anthropic.claude-sonnet-5-5
+  personality: cautious
+  max_provider_calls: 120
+white:
+  policy: real_llm
+  provider: bedrock
+  model: us.openai.gpt-6.1-sol
+  personality: saboteur
+level: level_02
+seed: 42
+mode: playable
+view: research
+speed: 1.0
+show_telemetry: true

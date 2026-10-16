@@ -1,0 +1,42 @@
+{
+  "policy_key": "sonnet55:racer",
+  "emulator": "table-v1",
+  "training_records": 437,
+  "seeds": {
+    "7101": 66,
+    "7202": 76,
+    "7303": 66,
+    "7422": 86,
+    "7435": 62,
+    "7457": 81
+  },
+  "matches": 12,
+  "actions": {
+    "move": 260,
+    "interact": 166,
+    "inspect": 5,
+    "enter_safe_code": 4,
+    "approach_opponent": 2
+  },
+  "categories": {
+    "MOVE_PROGRESS": 269,
+    "SEARCH": 150,
+    "EXIT": 11,
+    "INSPECT": 5,
+    "APPROACH": 2
+  },
+  "buckets_per_level": {
+    "0": 1,
+    "1": 2,
+    "2": 4,
+    "3": 5,
+    "4": 7,
+    "5": 10,
+    "6": 12,
+    "7": 12,
+    "8": 14,
+    "9": 29,
+    "10": 32,
+    "11": 32
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "policy_key": "gpt61sol:opportunist",
+  "emulator": "logistic-v1",
+  "training_records": 451,
+  "seeds": {
+    "7101": 83,
+    "7202": 60,
+    "7303": 70,
+    "7422": 83,
+    "7435": 77,
+    "7457": 78
+  },
+  "matches": 12,
+  "actions": {
+    "move": 214,
+    "interact": 150,
+    "avoid_opponent": 49,
+    "inspect": 26,
+    "approach_opponent": 7,
+    "enter_safe_code": 5
+  },
+  "categories": {
+    "MOVE_PROGRESS": 215,
+    "SEARCH": 144,
+    "AVOID": 49,
+    "INSPECT": 26,
+    "EXIT": 10,
+    "APPROACH": 7
+  },
+  "columns": 99,
+  "classes": [
+    "move",
+    "interact",
+    "inspect",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 130,
+    "objective": 101.74678302824945,
+    "n_params": 600
+  }
+}

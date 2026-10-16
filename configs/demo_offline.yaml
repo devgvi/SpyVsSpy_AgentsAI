@@ -1,0 +1,26 @@
+# Offline demo: the fake provider stands in for a model (a seeded legal-action picker, zero tokens, no network, no
+# credential). It shows the whole runtime - hybrid escalations, THINKING, telemetry, summary, replay - for free.
+# Labelled FAKE PROVIDER everywhere: nothing it does says anything about a model.
+black:
+  policy: hybrid_v2
+  provider: fake
+  model: fake-legal
+  personality: cautious
+  provider_options:
+    latency_s: 0.4
+white:
+  policy: real_llm
+  provider: fake
+  model: fake-legal
+  personality: saboteur
+  provider_options:
+    latency_s: 0.6
+    mode: flaky
+    fail_every: 5
+level: level_02
+seed: 42
+mode: evaluation
+view: research
+time_limit: 180
+speed: 1.0
+show_telemetry: true

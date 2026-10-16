@@ -1,0 +1,387 @@
+{
+  "feature_schema_version": "policy-features-v1",
+  "input": "annotated obs-v1 payload (serialize_observation(live_state, live_workshop) + annotate_live_payload)",
+  "read_paths": [
+    "encounter.alert",
+    "encounter.fight_possible_now",
+    "encounter.opponent_distance",
+    "encounter.opponent_lives",
+    "encounter.opponent_room",
+    "exploration.current_room",
+    "exploration.rooms",
+    "legal_actions",
+    "memory.known_locked_objects",
+    "memory.visited_rooms",
+    "mission.have",
+    "mission.ready_to_exit",
+    "mission.required_items",
+    "opponent.last_seen",
+    "opponent.visible",
+    "puzzle.clue",
+    "puzzle.inscriptions_you_have_read",
+    "puzzle.safe_code_known",
+    "room.objects",
+    "self.inventory",
+    "self.lives",
+    "self.near_object_id",
+    "self.own_traps",
+    "self.room",
+    "self.trap_inventory",
+    "self.traps_triggered_on_you",
+    "time_budget.exit",
+    "time_budget.required_items_missing",
+    "time_budget.time_limit_s",
+    "time_budget.time_remaining_s",
+    "time_budget.urgency"
+  ],
+  "features": [
+    {
+      "name": "time_remaining_seconds",
+      "group": "mission",
+      "type": "int",
+      "source": "time_budget.time_remaining_s"
+    },
+    {
+      "name": "time_remaining_fraction",
+      "group": "mission",
+      "type": "float",
+      "source": "time_budget.time_remaining_s / time_limit_s"
+    },
+    {
+      "name": "time_pressure",
+      "group": "mission",
+      "type": "category",
+      "source": "time_budget.urgency (relaxed / tight / critical)"
+    },
+    {
+      "name": "objectives_remaining_count",
+      "group": "mission",
+      "type": "int",
+      "source": "len(time_budget.required_items_missing)"
+    },
+    {
+      "name": "has_archive_key",
+      "group": "mission",
+      "type": "bool",
+      "source": "self.inventory"
+    },
+    {
+      "name": "has_security_keycard",
+      "group": "mission",
+      "type": "bool",
+      "source": "self.inventory"
+    },
+    {
+      "name": "has_safe_code",
+      "group": "mission",
+      "type": "bool",
+      "source": "puzzle.safe_code_known"
+    },
+    {
+      "name": "safe_code_derivable",
+      "group": "mission",
+      "type": "bool",
+      "source": "puzzle.clue + inscriptions_you_have_read"
+    },
+    {
+      "name": "has_secret_documents",
+      "group": "mission",
+      "type": "bool",
+      "source": "self.inventory"
+    },
+    {
+      "name": "has_passport",
+      "group": "mission",
+      "type": "bool",
+      "source": "self.inventory"
+    },
+    {
+      "name": "mission_complete",
+      "group": "mission",
+      "type": "bool",
+      "source": "mission.ready_to_exit"
+    },
+    {
+      "name": "exit_known",
+      "group": "mission",
+      "type": "bool",
+      "source": "time_budget.exit.known"
+    },
+    {
+      "name": "exit_reachable_if_observable",
+      "group": "mission",
+      "type": "bool",
+      "source": "time_budget.exit.eta_s is a number"
+    },
+    {
+      "name": "hearts",
+      "group": "self",
+      "type": "int",
+      "source": "self.lives"
+    },
+    {
+      "name": "health_band",
+      "group": "self",
+      "type": "category",
+      "source": "self.lives: 3 high, 2 mid, 1 low"
+    },
+    {
+      "name": "trap_hits",
+      "group": "self",
+      "type": "int",
+      "source": "self.traps_triggered_on_you"
+    },
+    {
+      "name": "current_room",
+      "group": "self",
+      "type": "category",
+      "source": "self.room"
+    },
+    {
+      "name": "trap_inventory_total",
+      "group": "self",
+      "type": "int",
+      "source": "sum(self.trap_inventory)"
+    },
+    {
+      "name": "own_traps_armed",
+      "group": "self",
+      "type": "int",
+      "source": "len(self.own_traps)"
+    },
+    {
+      "name": "near_object_type",
+      "group": "self",
+      "type": "category",
+      "source": "type of self.near_object_id (room.objects), or none"
+    },
+    {
+      "name": "last_action_type",
+      "group": "self",
+      "type": "category",
+      "source": "recent_actions[0]"
+    },
+    {
+      "name": "opponent_visible",
+      "group": "opponent",
+      "type": "bool",
+      "source": "opponent.visible"
+    },
+    {
+      "name": "opponent_alert_present",
+      "group": "opponent",
+      "type": "bool",
+      "source": "encounter.alert present"
+    },
+    {
+      "name": "opponent_same_room",
+      "group": "opponent",
+      "type": "bool",
+      "source": "encounter.opponent_room == self.room"
+    },
+    {
+      "name": "opponent_distance_bucket",
+      "group": "opponent",
+      "type": "category",
+      "source": "encounter.opponent_distance: close <=140 / near <=300 / far"
+    },
+    {
+      "name": "last_seen_opponent_room",
+      "group": "opponent",
+      "type": "category",
+      "source": "opponent.last_seen.room, or never"
+    },
+    {
+      "name": "opponent_hearts",
+      "group": "opponent",
+      "type": "int|null",
+      "source": "encounter.opponent_lives (only while visible)"
+    },
+    {
+      "name": "life_balance",
+      "group": "opponent",
+      "type": "category",
+      "source": "self.lives vs encounter.opponent_lives: lead / equal / trail / unknown"
+    },
+    {
+      "name": "fight_possible_now",
+      "group": "opponent",
+      "type": "bool",
+      "source": "encounter.fight_possible_now"
+    },
+    {
+      "name": "inspect_legal",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "legal_actions"
+    },
+    {
+      "name": "search_legal",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "legal interact on a non-door object"
+    },
+    {
+      "name": "door_interact_legal",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "legal interact on a door"
+    },
+    {
+      "name": "place_trap_legal",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "legal_actions"
+    },
+    {
+      "name": "disarm_legal",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "legal_actions"
+    },
+    {
+      "name": "approach_opponent_legal",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "legal_actions"
+    },
+    {
+      "name": "avoid_opponent_legal",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "legal_actions"
+    },
+    {
+      "name": "enter_code_legal",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "legal_actions"
+    },
+    {
+      "name": "exit_interact_legal",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "legal interact on exit_door"
+    },
+    {
+      "name": "fight_related_option_present",
+      "group": "opportunity",
+      "type": "bool",
+      "source": "approach or avoid legal"
+    },
+    {
+      "name": "legal_action_count",
+      "group": "opportunity",
+      "type": "int",
+      "source": "len(legal_actions)"
+    },
+    {
+      "name": "move_target_count",
+      "group": "opportunity",
+      "type": "int",
+      "source": "legal move targets"
+    },
+    {
+      "name": "room_status",
+      "group": "opportunity",
+      "type": "category",
+      "source": "exploration.rooms[current].status"
+    },
+    {
+      "name": "room_unsearched_count",
+      "group": "opportunity",
+      "type": "int",
+      "source": "exploration.rooms[current].unsearched"
+    },
+    {
+      "name": "room_uninspected_count",
+      "group": "opportunity",
+      "type": "int",
+      "source": "exploration.rooms[current].uninspected"
+    },
+    {
+      "name": "room_inspected_unsearched_count",
+      "group": "opportunity",
+      "type": "int",
+      "source": "unsearched but already inspected, current room"
+    },
+    {
+      "name": "room_untraversed_exits_count",
+      "group": "opportunity",
+      "type": "int",
+      "source": "exploration.rooms[current].untraversed_exits"
+    },
+    {
+      "name": "known_unsearched_elsewhere_count",
+      "group": "opportunity",
+      "type": "int",
+      "source": "unsearched objects in other visited rooms"
+    },
+    {
+      "name": "visited_room_count",
+      "group": "memory",
+      "type": "int",
+      "source": "memory.visited_rooms"
+    },
+    {
+      "name": "known_locked_object_count",
+      "group": "memory",
+      "type": "int",
+      "source": "memory.known_locked_objects"
+    },
+    {
+      "name": "recent_action_1",
+      "group": "memory",
+      "type": "category",
+      "source": "recent_actions[0] (strategy_memory.recent_decisions)"
+    },
+    {
+      "name": "recent_action_2",
+      "group": "memory",
+      "type": "category",
+      "source": "recent_actions[1]"
+    },
+    {
+      "name": "recent_action_3",
+      "group": "memory",
+      "type": "category",
+      "source": "recent_actions[2]"
+    },
+    {
+      "name": "recent_trap_attempt",
+      "group": "memory",
+      "type": "bool",
+      "source": "place_trap among recent_actions[0:3]"
+    },
+    {
+      "name": "opponent_seen_before",
+      "group": "memory",
+      "type": "bool",
+      "source": "opponent.last_seen is set"
+    }
+  ],
+  "unavailable": {
+    "currently_moving": "a decision is requested only when no action is executing; the payload has no movement state",
+    "currently_interacting": "same: the payload has no in-progress interaction state",
+    "last_seen_opponent_age": "opponent.last_seen.game_time is world time, not mission time; the two differ under some clocks",
+    "nearby_interactable_count": "the payload exposes one object in interaction range at most (near_object_type)",
+    "nearby_searched_trappable_count": "room.objects carries no room membership for searched objects",
+    "recent_fight": "strategy_memory.recent_events is not logged in Phase-A telemetry",
+    "recent_life_loss": "strategy_memory.recent_events is not logged in Phase-A telemetry",
+    "recent_objective_progress": "strategy_memory.recent_events is not logged in Phase-A telemetry",
+    "exit_legal": "move exit_door is always legal; exit_interact_legal records standing at the exit"
+  },
+  "b1_dimensions": [
+    "opponent_alert_present",
+    "inspect_legal",
+    "search_legal",
+    "place_trap_legal",
+    "approach_opponent_legal",
+    "avoid_opponent_legal",
+    "opponent_visible",
+    "mission_complete",
+    "health_band",
+    "life_balance",
+    "time_pressure"
+  ]
+}

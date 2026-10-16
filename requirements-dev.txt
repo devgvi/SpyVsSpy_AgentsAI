@@ -1,0 +1,5 @@
+# Development: the test suite. Includes the runtime requirements.
+-r requirements.txt
+pytest==9.1.1                    # python -m pytest -q tests
+strands-agents[ollama]==1.57.1   # the engine's Strands runtime adapter and its tests (never used by spy_vs_ai.play)
+ollama==0.6.2                    # pinned: the Strands Ollama model the adapter tests build

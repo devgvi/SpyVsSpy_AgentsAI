@@ -1,0 +1,4 @@
+# Spy vs AI runtime. Versions are the ones the frozen release and the runtime were validated with (Python 3.12).
+pygame==2.6.1        # the game
+boto3==1.43.103      # Amazon Bedrock only; OpenAI direct, Anthropic direct and Ollama use the standard library
+PyYAML==6.0.3        # YAML configuration files (configs/*.yaml); a built-in subset parser is used without it

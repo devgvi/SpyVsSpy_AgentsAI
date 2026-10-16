@@ -1,0 +1,49 @@
+{
+  "artifact_version": "policy-artifact-v2",
+  "policy_key": "sonnet55:racer",
+  "policy_id": "sonnet55__racer__stage5a-C1",
+  "model": "sonnet55",
+  "model_id": "us.anthropic.claude-sonnet-5-5",
+  "personality": "racer",
+  "candidate": "C1",
+  "candidate_definition": "Phase-A CLEAN + every promoted TRAIN hard example (status kept), unweighted (the 1x point of the C2 grid)",
+  "training_dataset": "stage5a:C1",
+  "training_dataset_hash": "sha256:f284935d6796a9a6",
+  "phase_a_dataset_hash": "sha256:90a0f39349ab509a",
+  "stage5a_data_hash": "sha256:f284935d6796a9a6",
+  "promotion_policy_hash": "sha256:8504fba41f9e2914",
+  "split_hash": "sha256:014fb58caeae5034",
+  "selection_protocol_hash": "sha256:de48900d83464e4e",
+  "training_records": 471,
+  "training_composition": {
+    "phase_a_clean": 437,
+    "hard_examples": 34,
+    "hard_by_source": {
+      "m4c": 11,
+      "m4d": 23
+    }
+  },
+  "hard_weight": 1.0,
+  "weight_normalization": null,
+  "feature_schema_version": "policy-features-v1",
+  "created_utc": "2026-10-07T05:50:22+00:00",
+  "kind": "action",
+  "emulator": "logistic-v1",
+  "training_config": {
+    "c": 1.0,
+    "class_weight": "none",
+    "feature_set": "full"
+  },
+  "action_vocabulary": [
+    "wait",
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "disarm",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "content_hash": "sha256:2b046e3a1f53074a"
+}

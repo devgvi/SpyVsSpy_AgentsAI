@@ -1,0 +1,42 @@
+{
+  "policy_key": "gpt61sol:racer",
+  "emulator": "table-v1",
+  "training_records": 342,
+  "seeds": {
+    "7101": 52,
+    "7202": 56,
+    "7303": 48,
+    "7422": 64,
+    "7435": 53,
+    "7457": 69
+  },
+  "matches": 12,
+  "actions": {
+    "move": 180,
+    "interact": 142,
+    "inspect": 10,
+    "enter_safe_code": 7,
+    "approach_opponent": 3
+  },
+  "categories": {
+    "MOVE_PROGRESS": 182,
+    "SEARCH": 133,
+    "EXIT": 14,
+    "INSPECT": 10,
+    "APPROACH": 3
+  },
+  "buckets_per_level": {
+    "0": 1,
+    "1": 2,
+    "2": 4,
+    "3": 6,
+    "4": 8,
+    "5": 12,
+    "6": 15,
+    "7": 15,
+    "8": 20,
+    "9": 27,
+    "10": 32,
+    "11": 32
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "policy_key": "sonnet55:racer",
+  "candidate": "C1",
+  "rows": 471,
+  "phase_a_rows": 437,
+  "hard_rows": 34,
+  "weights": {
+    "phase_a": 1.0,
+    "hard": 1.0
+  },
+  "actions": {
+    "move": 270,
+    "interact": 180,
+    "enter_safe_code": 8,
+    "inspect": 8,
+    "approach_opponent": 3,
+    "place_trap": 1,
+    "wait": 1
+  },
+  "columns": 101,
+  "classes": [
+    "wait",
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "approach_opponent",
+    "enter_safe_code"
+  ],
+  "optimizer": {
+    "iterations": 142,
+    "objective": 72.35321783842761,
+    "n_params": 714
+  },
+  "seconds": 1.07
+}

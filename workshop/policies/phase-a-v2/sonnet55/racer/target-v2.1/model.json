@@ -1,0 +1,159 @@
+{
+ "beta": {
+  "class=door_blocked": -2.84067701,
+  "class=door_blocked&mission_complete": 0.0,
+  "class=door_blocked&opponent_alert_present": -0.10300026,
+  "class=door_traversed": -0.61881112,
+  "class=door_traversed&mission_complete": -0.15049543,
+  "class=door_traversed&opponent_alert_present": -0.33173339,
+  "class=door_untraversed": 2.87370201,
+  "class=door_untraversed&mission_complete": -0.25747554,
+  "class=door_untraversed&opponent_alert_present": 0.79413457,
+  "class=exit_door": -0.97921057,
+  "class=exit_door&mission_complete": 3.5705953,
+  "class=exit_door&opponent_alert_present": -0.47996508,
+  "class=other_object": -2.3324085,
+  "class=other_object&mission_complete": -0.28411286,
+  "class=other_object&opponent_alert_present": -0.15847347,
+  "class=safe": -1.53184563,
+  "class=safe&mission_complete": -0.93431913,
+  "class=safe&opponent_alert_present": -0.98252753,
+  "class=unsearched_elsewhere": -0.3618342,
+  "class=unsearched_elsewhere&mission_complete": -0.21040431,
+  "class=unsearched_elsewhere&opponent_alert_present": 1.18080223,
+  "class=unsearched_here": 5.79108502,
+  "class=unsearched_here&mission_complete": -1.73378803,
+  "class=unsearched_here&opponent_alert_present": 0.08076293,
+  "door_here": -0.48917938,
+  "eta_10s": -0.48267249,
+  "eta_known": 0.14240201,
+  "exit_and_mission_complete": 3.5705953,
+  "listed_inspected": -2.44650037,
+  "listed_searched": -6.27060839,
+  "near_object": -0.12848465,
+  "nearest_in_class": 1.68943983,
+  "nearest_overall": 0.94928534,
+  "safe_and_code_known": 7.3498077
+ },
+ "c": 1.0,
+ "context_dimensions": [
+  "mission_complete",
+  "opponent_alert_present"
+ ],
+ "emulator": "target-v2.1",
+ "form": "conditional logit over the legal MOVE targets with target class x context (mission_complete, opponent_alert_present) indicators; other actions as target-class-v1",
+ "info": {
+  "iterations": 12,
+  "n_params": 34,
+  "objective": 142.2609343737675
+ },
+ "n_train": 260,
+ "prior": "pooled",
+ "target_features_version": "target-features-v1",
+ "v1": {
+  "dims": [
+   "mission_complete",
+   "opponent_alert_present"
+  ],
+  "emulator": "target-class-v1",
+  "min_count": 3,
+  "pooled": {
+   "approach_opponent": {
+    "opponent": 59
+   },
+   "avoid_opponent": {
+    "opponent": 126
+   },
+   "disarm": {
+    "near_object": 4
+   },
+   "enter_safe_code": {
+    "near_object": 51
+   },
+   "inspect": {
+    "near_object": 433
+   },
+   "interact": {
+    "near_object": 1286
+   },
+   "move": {
+    "door_traversed": 58,
+    "door_untraversed": 398,
+    "exit_door": 66,
+    "other_object": 198,
+    "safe": 124,
+    "unsearched_elsewhere": 65,
+    "unsearched_here": 1014
+   },
+   "place_trap": {
+    "near_object": 47
+   },
+   "wait": {
+    "none": 22
+   }
+  },
+  "tables": {
+   "action": {
+    "approach_opponent": {
+     "opponent": 2
+    },
+    "enter_safe_code": {
+     "near_object": 4
+    },
+    "inspect": {
+     "near_object": 5
+    },
+    "interact": {
+     "near_object": 166
+    },
+    "move": {
+     "door_traversed": 3,
+     "door_untraversed": 87,
+     "exit_door": 6,
+     "safe": 9,
+     "unsearched_here": 155
+    }
+   },
+   "exact": {
+    "approach_opponent|mission_complete=False|opponent_alert_present=True": {
+     "opponent": 2
+    },
+    "enter_safe_code|mission_complete=False|opponent_alert_present=False": {
+     "near_object": 4
+    },
+    "inspect|mission_complete=False|opponent_alert_present=False": {
+     "near_object": 4
+    },
+    "inspect|mission_complete=False|opponent_alert_present=True": {
+     "near_object": 1
+    },
+    "interact|mission_complete=False|opponent_alert_present=False": {
+     "near_object": 154
+    },
+    "interact|mission_complete=False|opponent_alert_present=True": {
+     "near_object": 7
+    },
+    "interact|mission_complete=True|opponent_alert_present=False": {
+     "near_object": 5
+    },
+    "move|mission_complete=False|opponent_alert_present=False": {
+     "door_traversed": 3,
+     "door_untraversed": 73,
+     "exit_door": 1,
+     "safe": 7,
+     "unsearched_here": 149
+    },
+    "move|mission_complete=False|opponent_alert_present=True": {
+     "door_untraversed": 14,
+     "safe": 2,
+     "unsearched_here": 6
+    },
+    "move|mission_complete=True|opponent_alert_present=False": {
+     "exit_door": 5
+    }
+   }
+  },
+  "trap_types": {},
+  "within_class": "uniform over the legal targets of that class"
+ }
+}

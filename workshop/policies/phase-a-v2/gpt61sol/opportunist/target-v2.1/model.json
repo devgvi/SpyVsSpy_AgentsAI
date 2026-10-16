@@ -1,0 +1,176 @@
+{
+ "beta": {
+  "class=door_blocked": -2.86834219,
+  "class=door_blocked&mission_complete": 0.0,
+  "class=door_blocked&opponent_alert_present": -0.099055,
+  "class=door_traversed": -0.87543092,
+  "class=door_traversed&mission_complete": -0.1492246,
+  "class=door_traversed&opponent_alert_present": -0.19635387,
+  "class=door_untraversed": 1.29330621,
+  "class=door_untraversed&mission_complete": -0.24821405,
+  "class=door_untraversed&opponent_alert_present": 0.96012969,
+  "class=exit_door": -1.51708265,
+  "class=exit_door&mission_complete": 3.65260408,
+  "class=exit_door&opponent_alert_present": -0.44267332,
+  "class=other_object": -0.25258912,
+  "class=other_object&mission_complete": -0.32648235,
+  "class=other_object&opponent_alert_present": 0.23044694,
+  "class=safe": -1.89402726,
+  "class=safe&mission_complete": -1.04032951,
+  "class=safe&opponent_alert_present": -0.86871867,
+  "class=unsearched_elsewhere": 1.71676348,
+  "class=unsearched_elsewhere&mission_complete": -0.24600214,
+  "class=unsearched_elsewhere&opponent_alert_present": 0.58598887,
+  "class=unsearched_here": 4.39740244,
+  "class=unsearched_here&mission_complete": -1.64235143,
+  "class=unsearched_here&opponent_alert_present": -0.16976464,
+  "door_here": -0.72078591,
+  "eta_10s": -1.40145428,
+  "eta_known": -1.83311294,
+  "exit_and_mission_complete": 3.65260408,
+  "listed_inspected": -2.67673291,
+  "listed_searched": -6.01224798,
+  "near_object": -1.06763283,
+  "nearest_in_class": 1.71662852,
+  "nearest_overall": 0.68873815,
+  "safe_and_code_known": 7.54895944
+ },
+ "c": 1.0,
+ "context_dimensions": [
+  "mission_complete",
+  "opponent_alert_present"
+ ],
+ "emulator": "target-v2.1",
+ "form": "conditional logit over the legal MOVE targets with target class x context (mission_complete, opponent_alert_present) indicators; other actions as target-class-v1",
+ "info": {
+  "iterations": 14,
+  "n_params": 34,
+  "objective": 272.9948369951704
+ },
+ "n_train": 214,
+ "prior": "pooled",
+ "target_features_version": "target-features-v1",
+ "v1": {
+  "dims": [
+   "mission_complete",
+   "opponent_alert_present"
+  ],
+  "emulator": "target-class-v1",
+  "min_count": 3,
+  "pooled": {
+   "approach_opponent": {
+    "opponent": 59
+   },
+   "avoid_opponent": {
+    "opponent": 126
+   },
+   "disarm": {
+    "near_object": 4
+   },
+   "enter_safe_code": {
+    "near_object": 51
+   },
+   "inspect": {
+    "near_object": 433
+   },
+   "interact": {
+    "near_object": 1286
+   },
+   "move": {
+    "door_traversed": 58,
+    "door_untraversed": 398,
+    "exit_door": 66,
+    "other_object": 198,
+    "safe": 124,
+    "unsearched_elsewhere": 65,
+    "unsearched_here": 1014
+   },
+   "place_trap": {
+    "near_object": 47
+   },
+   "wait": {
+    "none": 22
+   }
+  },
+  "tables": {
+   "action": {
+    "approach_opponent": {
+     "opponent": 7
+    },
+    "avoid_opponent": {
+     "opponent": 49
+    },
+    "enter_safe_code": {
+     "near_object": 5
+    },
+    "inspect": {
+     "near_object": 26
+    },
+    "interact": {
+     "near_object": 150
+    },
+    "move": {
+     "door_traversed": 3,
+     "door_untraversed": 15,
+     "exit_door": 6,
+     "other_object": 48,
+     "safe": 23,
+     "unsearched_elsewhere": 22,
+     "unsearched_here": 97
+    }
+   },
+   "exact": {
+    "approach_opponent|mission_complete=False|opponent_alert_present=False": {
+     "opponent": 2
+    },
+    "approach_opponent|mission_complete=False|opponent_alert_present=True": {
+     "opponent": 5
+    },
+    "avoid_opponent|mission_complete=False|opponent_alert_present=False": {
+     "opponent": 1
+    },
+    "avoid_opponent|mission_complete=False|opponent_alert_present=True": {
+     "opponent": 48
+    },
+    "enter_safe_code|mission_complete=False|opponent_alert_present=False": {
+     "near_object": 3
+    },
+    "enter_safe_code|mission_complete=False|opponent_alert_present=True": {
+     "near_object": 2
+    },
+    "inspect|mission_complete=False|opponent_alert_present=False": {
+     "near_object": 26
+    },
+    "interact|mission_complete=False|opponent_alert_present=False": {
+     "near_object": 145
+    },
+    "interact|mission_complete=False|opponent_alert_present=True": {
+     "near_object": 1
+    },
+    "interact|mission_complete=True|opponent_alert_present=False": {
+     "near_object": 4
+    },
+    "move|mission_complete=False|opponent_alert_present=False": {
+     "door_traversed": 3,
+     "door_untraversed": 14,
+     "exit_door": 1,
+     "other_object": 47,
+     "safe": 21,
+     "unsearched_elsewhere": 22,
+     "unsearched_here": 95
+    },
+    "move|mission_complete=False|opponent_alert_present=True": {
+     "door_untraversed": 1,
+     "other_object": 1,
+     "safe": 2,
+     "unsearched_here": 2
+    },
+    "move|mission_complete=True|opponent_alert_present=False": {
+     "exit_door": 5
+    }
+   }
+  },
+  "trap_types": {},
+  "within_class": "uniform over the legal targets of that class"
+ }
+}

@@ -1,0 +1,71 @@
+{
+  "artifact_version": "policy-artifact-v2",
+  "policy_key": "gpt61sol:racer",
+  "policy_id": "gpt61sol__racer__phase-a-v2",
+  "model": "gpt61sol",
+  "model_id": "us.openai.gpt-6.1-sol",
+  "model_display": "GPT-6.1 Sol",
+  "personality": "racer",
+  "prompt_version": [
+    "m5a-agent-v1"
+  ],
+  "observation_version": [
+    "obs-v1"
+  ],
+  "memory_version": [
+    "memory-v1"
+  ],
+  "action_schema_version": [
+    "action-v1"
+  ],
+  "runtime": [
+    "native_tool_like"
+  ],
+  "game_code_hash": [
+    "sha256:06d67080f58836cf"
+  ],
+  "training_dataset": "phase-a-v2",
+  "training_dataset_hash": "sha256:90a0f39349ab509a",
+  "training_source_type": "full_match",
+  "training_set": "CLEAN",
+  "training_records": 342,
+  "training_seeds": [
+    7101,
+    7202,
+    7303,
+    7422,
+    7435,
+    7457
+  ],
+  "feature_schema_version": "policy-features-v1",
+  "created_utc": "2026-10-04T09:07:44+00:00",
+  "kind": "coverage",
+  "emulator": "coverage-v1",
+  "training_config": {
+    "b1_dimensions": [
+      "opponent_alert_present",
+      "inspect_legal",
+      "search_legal",
+      "place_trap_legal",
+      "approach_opponent_legal",
+      "avoid_opponent_legal",
+      "opponent_visible",
+      "mission_complete",
+      "health_band",
+      "life_balance",
+      "time_pressure"
+    ]
+  },
+  "action_vocabulary": [
+    "wait",
+    "move",
+    "interact",
+    "inspect",
+    "place_trap",
+    "disarm",
+    "approach_opponent",
+    "avoid_opponent",
+    "enter_safe_code"
+  ],
+  "content_hash": "sha256:fca18137c6c0c576"
+}
