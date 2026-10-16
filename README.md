@@ -153,4 +153,4 @@ tests/              the test suite (python -m pytest -q tests)
 
 ## License
 
-No license has been chosen yet; until one is added, all rights are reserved by the author.
+Released under the [Apache License 2.0](LICENSE). You may use, copy, modify and redistribute this project, provided you keep the license text and copyright notices.
